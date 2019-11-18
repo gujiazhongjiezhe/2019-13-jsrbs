@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <style>
+        * {
+            margin: 0;
+            padding:0;
+
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            position: relative;
+            top: 1px;
+        }
+        #box {
+            width: 500px;
+            margin: 20px auto;
+            /* border: 1px solid black; */
+            text-align: center;
+        }
+        #box li {
+            width: 150px;
+            font-size: 20px;
+            line-height: 30px;
+            margin-right: 10px;
+            border: 1px solid black;
+        }
+        #box div {
+            width: 500px;
+            height: 300px;
+            line-height: 300px;
+            font-size: 50px;
+            color: orangered;
+            border: 1px solid black;
+            display: none;
+        }
+        #box div.active {
+            display: block;
+        }
+        #box li.active {
+            border-bottom-color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul id="navList">
+            <li class="active">孙悟空</li>
+            <li>猪无能</li>
+            <li>沙悟净</li>
+        </ul>
+        <div class="active">俺老孙来也</div>
+        <div>趁早分家得了</div>
+        <div>二师兄说的对啊</div>
+    </div>
+    <script>
+        let navList = document.querySelectorAll('#navList li');
+        let tabList = document.querySelectorAll('#box div');
+        console.log(navList, tabList)
+        for (var i = 0; i < navList.length; i++) {
+            navList[i].myIndex = i;
+            navList[i].onclick = function(){
+                // console.dir(this)
+                fn(this.myIndex)
+            }
+        }
+       
+        /* 
+        i=0
+        navList[0].myIndex = 0;
+        navList[0].onclick = function(){
+                console.log(i)
+            }
+        i=1
+        navList[1].myIndex = 1;
+        navList[1].onclick = function(){
+                console.log(i)
+            }
+
+        i=2
+        navList[2].myIndex = 2;
+        navList[2].onclick = function(){
+                console.log(i)
+            }
+        i=3
+         */
+        function fn(index){
+            for (var i = 0; i < tabList.length; i++) {
+                navList[i].className = '';
+                tabList[i].className = '';
+            }
+            navList[index].className = 'active';
+            tabList[index].className = 'active';
+        }
+    </script>
+</body>
+</html>

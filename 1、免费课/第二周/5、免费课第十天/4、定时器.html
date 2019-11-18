@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        定时器
+        */
+    //    setTimeout(()=>{},间隔时间，函数的实参); // 他只执行之一次
+        // setTimeout((b) => {
+        //         console.log(b)
+        // }, 2000,100);
+
+    // console.time();
+    // for (var i = 0; i < 1000; i++) {
+        
+    // }
+    // console.timeEnd();
+
+    // setInterval(()=>{},间隔时间，函数的实参)// 他是周期性的函数，到了间隔的时间就会执行一次，如果不手动清除定时器，就会一直执行
+    let num = null;
+    setInterval(()=>{
+        if(num>5){
+            clearInterval(ss);
+            return;
+        }
+        console.log(666)
+        num++
+    },100)
+
+    function fn(){
+        return 2
+    }
+
+    let num = fn()
+    </script>
+</body>
+</html>

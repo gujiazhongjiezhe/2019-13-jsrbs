@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选项卡</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            position: relative;
+            top: 1px;
+        }
+        li {
+            width: 150px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 30px;
+            color: black;
+            border:1px solid black;
+            margin-right: 10px;
+        }
+        #box div {
+            width: 500px;
+            border:1px solid black;
+            text-align: center;
+            height: 300px;
+            line-height: 300px;
+            font-size: 30px;
+            display: none;
+        }
+        #box {
+            width: 502px;
+            margin: 20px auto;
+        }
+        #box div.active {
+            display: block;
+            background: orangered;
+        }
+        #box li.active {
+            border-bottom-color:orangered;
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul  id="navList">
+            <li class="active">孙悟空</li>
+            <li >猪无能</li>
+            <li>沙悟净</li>
+        </ul>
+        <div class="active">俺老孙来也</div>
+        <div >趁早分家得了</div>
+        <div>二师兄说的对啊</div>
+        <script>
+           // 1、想操作谁就获取谁
+            let box = document.getElementById('box');
+            let nav = document.getElementById('navList')
+            let navList = nav.getElementsByTagName('li');
+            let tabList = box.getElementsByTagName('div');
+
+            // 2、给相应的元素绑定相应的事件
+            for (var i = 0; i < navList.length; i++) {
+               navList[i].myIndex = i
+               navList[i].onclick=function(){
+
+                    console.dir(this)
+                    fn(this.myIndex)
+               }
+            }
+            // 因为当用户点击事件的时候，for循环早已经循环结束，这时候获取i的值就是3
+            /* 
+            i = 0
+            navList[0].myIndex = 0
+            navList[0].onclick=function(){
+                    console.log(i)
+               }
+
+            i = 1
+            navList[1].myIndex = 1
+            navList[1].onclick=function(){
+                    console.log(i)
+               }
+            i = 2
+            navList[2].myIndex = 2
+            navList[2].onclick=function(){
+                    console.log(i)
+               }
+            */
+            function fn(index){
+                for (var i = 0; i < navList.length; i++) {
+                   navList[i].className = '';
+                   tabList[i].className = '';
+                }
+
+                navList[index].className = 'active';
+                tabList[index].className = 'active';
+            }
+        </script>
+    </div>
+</body>
+</html>

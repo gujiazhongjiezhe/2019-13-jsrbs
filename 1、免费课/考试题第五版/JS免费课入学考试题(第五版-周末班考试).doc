@@ -1,0 +1,601 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type  content="text/html; charset=gb2312" ><meta name=ProgId  content=Word.Document ><meta name=Generator  content="Microsoft Word 14" ><meta name=Originator  content="Microsoft Word 14" ><title></title><!--[if gte mso 9]><xml><w:WordDocument><w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel><w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery><w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery><w:DocumentKind>DocumentNotSpecified</w:DocumentKind><w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing><w:View>Print</w:View><w:Compatibility><w:UseFELayout/></w:Compatibility><w:Zoom>0</w:Zoom></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false"  DefUnhideWhenUsed="true"  DefSemiHidden="true"  DefQFormat="false"  DefPriority="99"  LatentStyleCount="260" >
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Normal" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="9"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="39"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footer" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="35"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="caption" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of figures" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope return" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="line number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="page number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of authorities" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="macro" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toa heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="10"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Title" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Closing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Default Paragraph Font" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Message Header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="11"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Subtitle" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Salutation" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Date" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Note Heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Block Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Hyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="FollowedHyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="22"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Strong" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="20"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Emphasis" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Document Map" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Plain Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="E-mail Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal (Web)" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Acronym" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Cite" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Code" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Definition" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Keyboard" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Preformatted" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Sample" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Typewriter" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Variable" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Normal Table" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation subject" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Simple 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Simple 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Simple 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Colorful 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Colorful 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Colorful 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table 3D effects 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table 3D effects 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table 3D effects 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Contemporary" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Elegant" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Professional" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Subtle 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Subtle 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Web 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Web 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Web 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Balloon Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Theme" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 6" ></w:LsdException>
+</w:LatentStyles></xml><![endif]--><style>
+@font-face{
+font-family:"Times New Roman";
+}
+
+@font-face{
+font-family:"宋体";
+}
+
+@font-face{
+font-family:"Wingdings";
+}
+
+@font-face{
+font-family:"微软雅黑";
+}
+
+@font-face{
+font-family:"Verdana";
+}
+
+p.MsoNormal{
+mso-style-name:正文;
+mso-style-noshow:yes;
+mso-style-parent:"";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+h1{
+mso-style-name:"标题 1";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:24.0000pt;
+mso-font-kerning:22.0000pt;
+}
+
+h2{
+mso-style-name:"标题 2";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:18.0000pt;
+}
+
+h3{
+mso-style-name:"标题 3";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:13.5000pt;
+}
+
+h4{
+mso-style-name:"标题 4";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:12.0000pt;
+}
+
+h5{
+mso-style-name:"标题 5";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:10.0000pt;
+}
+
+h6{
+mso-style-name:"标题 6";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:7.5000pt;
+}
+
+span.10{
+font-family:'Times New Roman';
+}
+
+span.15{
+font-family:'Times New Roman';
+}
+
+span.16{
+font-family:'Times New Roman';
+}
+
+span.17{
+font-family:'Times New Roman';
+}
+
+span.18{
+font-family:'Times New Roman';
+}
+
+span.19{
+font-family:'Times New Roman';
+}
+
+span.20{
+font-family:'Times New Roman';
+font-style:italic;
+}
+
+span.21{
+font-family:'Times New Roman';
+font-weight:bold;
+}
+
+span.22{
+font-family:'Times New Roman';
+}
+
+span.23{
+font-family:'Times New Roman';
+}
+
+span.24{
+font-family:'Times New Roman';
+}
+
+span.25{
+font-family:'Times New Roman';
+}
+
+span.26{
+font-family:'Times New Roman';
+}
+
+span.27{
+font-family:'Times New Roman';
+}
+
+span.28{
+font-family:'Times New Roman';
+}
+
+span.29{
+font-family:'Times New Roman';
+}
+
+p.p{
+mso-style-name:"普通\(网站\)";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.pre{
+mso-style-name:"HTML 预设格式";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.NewStyle32{
+mso-style-name:"p Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.NewStyle33{
+mso-style-name:"pre Char";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.NewStyle34{
+mso-style-name:"HTML 预设格式 Char";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.NewStyle35{
+mso-style-name:"普通\(网站\) Char Char Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.NewStyle36{
+mso-style-name:"HTML 预设格式 Char Char Char";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.NewStyle37{
+mso-style-name:"普通\(网站\) Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.NewStyle38{
+mso-style-name:"普通\(网站\) Char Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.NewStyle39{
+mso-style-name:"HTML 预设格式 Char Char";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+span.msoIns{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:underline;
+text-underline:single;
+color:blue;
+}
+
+span.msoDel{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:line-through;
+color:red;
+}
+
+table.MsoNormalTable{
+mso-style-name:普通表格;
+mso-style-parent:"";
+mso-style-noshow:yes;
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-family:'Times New Roman';
+font-size:10.0000pt;
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;
+}
+@page{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}@page Section0{
+margin-top:36.0000pt;
+margin-bottom:36.0000pt;
+margin-left:36.0000pt;
+margin-right:36.0000pt;
+size:595.3500pt 841.9500pt;
+}
+div.Section0{page:Section0;}</style></head><body style="tab-interval:21pt;" ><!--StartFragment--><div class="Section0" ><p class=NewStyle37  style="margin-top:0.0000pt;margin-bottom:0.0000pt;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;" >一、基础知识填空&nbsp;(10)</span></b><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(255,0,0);font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle37  style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;text-autospace:ideograph-numeric;mso-pagination:widow-orphan;text-align:left;line-height:30.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;写出JS中的数据类型都有哪些：___&nbsp;1___&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据类型检测的方法(至少写出两种)：____2____</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;text-autospace:ideograph-numeric;mso-pagination:widow-orphan;text-align:left;line-height:30.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简要描述基本数据类型和引用数据类型的区别：____</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;mso-ascii-font-family:Verdana;mso-hansi-font-family:Verdana;mso-bidi-font-family:Verdana;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >3</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >____</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;text-autospace:ideograph-numeric;mso-pagination:widow-orphan;text-align:left;line-height:25.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;怎么样才可以把传递给函数的参数值接收到(两种办法)：____4____&nbsp;&#9;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;text-autospace:ideograph-numeric;mso-pagination:widow-orphan;text-align:left;line-height:25.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9;把函数体中的某个值返回到外面用：____5____</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="margin-top:0.0000pt;margin-bottom:0.0000pt;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;" >二、写出DOM中常用的方法和属性</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;(10)</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-right:0.0000pt;margin-bottom:5.0000pt;mso-para-margin-right:0.0000gd;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;面中有这样一个DIV标签&#60;div&nbsp;id=&#8217;div1&#8217;&nbsp;class=&#8217;box&#8217;&#62;&#60;/div&#62;&nbsp;，想获取到这个元素可以用哪些方法(至少两种办法,可以不兼容)：_____1_____</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-right:0.0000pt;margin-bottom:5.0000pt;mso-para-margin-right:0.0000gd;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;动态创建一个p标签，并且把其添加到body的末尾位置：____2_____</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-right:0.0000pt;margin-bottom:5.0000pt;mso-para-margin-right:0.0000gd;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;获取上一个哥哥节点：____3____&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;获取父亲节点：___4___</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-right:0.0000pt;margin-bottom:5.0000pt;mso-para-margin-right:0.0000gd;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;获取所有的元素子节点：___5___</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;" >三、数组的基础知识和应用&nbsp;(10)</span></b><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(255,0,0);font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle37  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在数组的后面追加一项(至少两种办法)：____</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;mso-ascii-font-family:Verdana;mso-hansi-font-family:Verdana;mso-bidi-font-family:Verdana;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >1</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >___&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;删除数组的最后一项(至少两种办法)：_____</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;mso-ascii-font-family:Verdana;mso-hansi-font-family:Verdana;mso-bidi-font-family:Verdana;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >2</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >_____</span></b><span style="mso-spacerun:'yes';font-family:宋体;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle37  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;写出循环遍历数组中每一项的方法(至少两种)：&nbsp;___</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;mso-ascii-font-family:Verdana;mso-hansi-font-family:Verdana;mso-bidi-font-family:Verdana;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >3__&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;mso-ascii-font-family:Verdana;mso-hansi-font-family:Verdana;mso-bidi-font-family:Verdana;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;mso-ascii-font-family:Verdana;mso-hansi-font-family:Verdana;mso-bidi-font-family:Verdana;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >数组从小到大排序(可以处理10以上的数字)：____4____</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实现找到</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >第n项到第m项(包括第n项和第m项)</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >的内容，返回一个新的数组(原有数组不变)：___5___</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;" >四、写出下面表达式的运算结果&nbsp;(10)</span></b><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(255,0,0);font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle37  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2==true：__1__&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null===undefined：__2__&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[]==false:___3__&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![]==false：__4__&nbsp;&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle37  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;val=&#8220;3px&#8221;+3&nbsp;?&nbsp;&#8220;ok&#8221;:&nbsp;&#8220;no&#8221;;&nbsp;&nbsp;val存储的值是多少：__5__</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >五</span></b><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >、(15)</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="margin-right:0.0000pt;mso-para-margin-right:0.0000gd;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >写一个sum方法来实现任意数求和功能（说明：任意数求和指的是，在方法执行的时候，不管传多少个数字，都可以进行累加求和；对于传递进来的是非有效数字要进行屏蔽；最后把求出的和返回到函数的外面；）</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="margin-right:0.0000pt;mso-para-margin-right:0.0000gd;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >六</span></b><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >、(15)</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,128);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >var&nbsp;</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >oLis</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >=</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >document</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >.</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(122,122,67);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >getElementsByTagName</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >(</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,128,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >"li"</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >);</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><br></span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,128);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >for</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >(</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,128);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >var&nbsp;</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >i</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >=</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >0</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >;</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >i</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&#60;</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >oLis</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >.</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >length</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >;</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >i</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >++){&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,128);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >if</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >(</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >n</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >==</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >0</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >){</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><br></span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >oLis</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >[</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >i</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >].</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >className</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >=</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,128,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >"bcRed"</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><br></span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;}</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,128);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >else&nbsp;if</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >(</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >n</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >==</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >1</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >){</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><br></span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >oLis</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >[</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >i</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >].</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >className</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >=</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,128,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >"bcYell"</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><br></span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;}</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,128);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >else</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >{</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><br></span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >oLis</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >[</span></b><b><i><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-style:italic;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >i</span></i></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >].</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(102,14,122);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >className</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >=</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,128,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >"bcBlue"</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><br></span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;}</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><br></span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >}&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >将上面代码中的for循环改写成while循环，将if&nbsp;else判断改写成switch判断&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >七、(15)</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="24"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&#60;body&#62;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="margin-left:0.0000pt;text-indent:21.0000pt;mso-char-indent-count:0.0000;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="24"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&#60;ul&nbsp;id=&#8217;ul1&#8217;&#62;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="margin-left:21.0000pt;mso-para-margin-left:0.0000gd;text-indent:21.0000pt;mso-char-indent-count:0.0000;mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="24"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&#60;li&#62;&#60;/li&#62;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="24"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;/ul&#62;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="24"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&#60;/body&#62;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal  style="margin-right:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;mso-pagination:widow-orphan;text-align:left;" ><b><span class="24"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >按照上述HTML结构编写对应的JS代码，实现如下的需求：</span></b><span class="24"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:normal;font-size:10.5000pt;" >(</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:normal;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >能写出的都写出来，这样根据编写情况会酌情给分</span><span class="24"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:normal;font-size:10.5000pt;" >)</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal  style="margin-right:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;mso-pagination:widow-orphan;text-align:left;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >-&#62;获取#ul1下的所有li,实现奇数行和偶数行的隔行变色&nbsp;(奇数行红色|偶数行绿色)&nbsp;&nbsp;</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:normal;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >~~不要骂出题的色彩白痴哈</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:normal;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-right:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;mso-pagination:widow-orphan;text-align:left;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >-&#62;鼠标滑过每一个li让当前行的背景颜色变为粉色(pink)，鼠标离开恢复开始的颜色</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal  style="margin-right:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;mso-pagination:widow-orphan;text-align:left;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >-&#62;鼠标点击每一个li弹出&#8220;我是第N个li&#8221;&nbsp;(n是每一个li的索引+1)</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=MsoNormal  style="margin-right:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;mso-pagination:widow-orphan;text-align:left;" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(255,0,0);font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >八、(15分)</span></b><span style="mso-spacerun:'yes';font-family:宋体;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><span style="mso-spacerun:'yes';font-family:宋体;font-size:10.5000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;</span><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >在免费课的实战案例中，最经典的莫过于选项卡，那么请用汉字来描述选项卡的实现思路(是思路不是代码,写代码的不给分)，可以参考以下的几个维度(根据描述的详细度和准确度给分数)：</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&nbsp;&nbsp;&nbsp;1)基本的布局结构和样式(以及让双边框合并的思想)</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&nbsp;&nbsp;&nbsp;2)选项卡的主体步骤和思路</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&nbsp;&nbsp;&nbsp;3)循环绑定事件(不使用自定义属性)会遇到的问题及原因</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&nbsp;&nbsp;&nbsp;4)用自定义属性(闭包)解决的原理</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=NewStyle34  style="mso-pagination:widow-orphan;text-align:left;line-height:21.0000pt;" ><b><span class="21"  style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >&nbsp;&nbsp;&nbsp;......</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></div><!--EndFragment--></body></html>

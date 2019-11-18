@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding:0;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            width: 500px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        li {
+            border-bottom: 1px solid green;
+            font-size: 30px;
+        }
+        /* li:nth-child(odd) {
+            background: red;
+        }
+        li:nth-child(even){
+            background: pink;
+        } */
+    </style>
+</head>
+<body>
+    <ul id="box">
+        <li>我是1个li</li>
+        <li>我是2个li</li>
+        <li>我是3个li</li>
+        <li>我是4个li</li>
+        <li>我是5个li</li>
+    </ul>
+    <script>
+        let lists = document.getElementsByTagName('li');
+        console.log(lists)
+        let color = null;
+        for (var i = 0; i < lists.length; i++) {
+            if(i%2 === 0){
+                lists[i].style.background = 'red';
+            }
+            else {
+                lists[i].style.background = 'pink';
+            }
+            lists[i].onmouseenter = function(){
+                color = this.style.background;
+                this.style.background = 'orange'
+            }
+            lists[i].onmouseout = function(){
+                this.style.background = color;
+            }
+
+        }
+    </script>
+</body>
+</html>
