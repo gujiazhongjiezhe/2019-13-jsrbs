@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 堆栈内存的销毁
+        // 堆内存的销毁
+
+        // let a  = 12;
+        // let ary = [1,2]; // 他就销毁了
+        // ary = [];
+
+        // 栈内存的销毁
+        function fn(){
+            function f(){}
+            return f
+            // 不销毁
+        }
+
+        let s = fn();
+
+
+        function fn(){
+            function f(){}
+        }
+
+        let s = fn();
+
+    </script>
+</body>
+</html>

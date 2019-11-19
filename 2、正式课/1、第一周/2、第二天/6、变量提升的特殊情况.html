@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1、变量提升发生在等号左边
+        // var a = function(){}
+
+        //2、不管if条件是否成立，都要进行变量提升
+
+        // console.log(num) // undefined
+        // if(false){
+        //     var num = 12;
+        // }
+        // console.log(num) // undefined
+
+        // console.log(fn); // undefined
+        //      // 在老版本浏览器里，if条件里的function既声明又定义，
+        //     // 在新版本浏览器里，if条件里的函数只声明不定义
+        // if(false){
+        //     // 条件一旦成立，第一件事就是给函数名赋值
+        //     fn()
+        //     function fn(){}
+        // }
+        // console.log(fn) // undefined
+
+        // console.log(fn); // undefined
+        //      // 在老版本浏览器里，if条件里的function既声明又定义，
+        //     // 在新版本浏览器里，if条件里的函数只声明不定义
+        // if(true){
+        //     // 条件一旦成立，第一件事就是给函数名赋值,然后在执行代码
+        //     fn()
+        //     function fn(){}
+        // }
+        // console.log(fn) // undefined
+
+
+        // in 属性，他是检测一个对象中有没有某个属性名，如果有就返回true，反之就返回false
+        // let obj = {
+        //     name: 22,
+        //     age: 33
+        // };
+        // console.log('age' in obj);  // true
+        // console.log('ss' in obj) // false
+
+
+        // console.log(fn); // undefined
+        // // var和function给window增加属性的过程是变量提升的时候发生的
+        // if ('fn' in window) {
+        //     // 如果条件成立，进来的后的第一件事就是给fn赋值，然后在执行代码
+        //     fn(); // 'erYa'
+        //     function fn() {
+        //         console.log('erYa');
+        //     }
+        // }
+        // fn();
+
+        // 3、函数里虽然return下面的代码不执行，但是要进行变量提升
+            // function fn() {
+            //     console.log(ss); // undefined
+            //     return;
+            //     var ss = 34;
+            // }
+            // fn()
+
+        // 4、匿名函数不进行变量提升
+
+        // (function(){
+
+        // })()
+    </script>
+</body>
+
+</html>

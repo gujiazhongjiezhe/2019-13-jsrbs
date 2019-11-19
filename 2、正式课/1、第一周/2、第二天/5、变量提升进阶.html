@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 函数的作用域查找
+        // 函数的上一级作用域是谁，在函数定义的时候就已经确定了，函数在哪创建的，他的上一级作用域就是谁，跟在哪执行的没有关系
+
+        // 作用域链查找机制
+        // 在私有作用域中，函数执行，如果要使用一个变量，自己作用域要是有，就使用自己的，要是没有，就向上一级作用域查找，上一级还没有，在向上一级查找，直到找到全局作用域，如果还没有就报错--->这种一级一级向上查找的机制就是【作用域链查找机制】
+
+        // 闭包=>函数执行形成的私有作用域就是闭包，他可以保护里边的私有变量不受外界干扰，
+        // 还可以保存变量
+
+        /* 
+        n = 1
+        fn:fn
+        x: f
+        */
+        var n = 1;
+        function fn() {
+            /* 
+            n = 2 1 0
+            f:f
+            */
+            var n = 2;
+            function f() {
+                /* 
+                
+                */
+                n--;
+                console.log(n); // 1 0
+            }
+            f();
+            return f;
+        }
+        var x = fn();
+        x();
+        console.log(n); // 1
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 变量提升
+        // 变量提升就是浏览器解析代码的一个过程
+        // 在当前作用域中，代码执行形之前，浏览器会对当前作用域里的带var和function进行提前的声明和定义；带var的只声明（创建变量）不定义；带function既声明（创建变量）又定义（进行赋值）
+
+        //    console.log(a) // undefind
+        //    var a =12; // a =12
+        //    console.log(a) // 12
+
+
+        /*  console.log(num);
+         var num = 100;
+         console.log(num); */
+
+        //  console.log(window.a); // undefined
+        //  console.log(b); // 报错 引用错误 在当前代码之后的代码不在运行
+        //  var a = 10;
+        //  b = 12;
+
+        /* 
+        console.log(b; // 报错 语法错误，他会使整个页面不运行
+        
+        */
+
+
+
+        // console.log(a); // undefined
+        // console.log(b); // 引用错误
+        // var a = b = c = 100;
+
+        // console.log(a); // undefined
+        // console.log(b); // undefined
+        // console.log(c); // undefined
+        // var a,b,c = 100;
+        // console.log(a);// undefined
+        // console.log(b);// undefined
+        // console.log(c);// 100
+
+        // function fn(){
+        //    console.log(num);
+        //    var num = 12;
+        // }
+        // fn();
+        // console.log(num)
+
+        /* 
+        变量提升
+        var name
+        fn (){}
+        */
+        // var name = 'jinYu';
+        // function fn(name){
+        //     /* 
+        //     name // f
+        //     */
+        //     console.log(name); //f
+        //     function name(){}
+        //     console.log(name); // f
+        // }
+        // fn(name)
+
+
+        /* 
+        fn // 12
+        
+        */
+
+        // function fn(){}
+        //  var fn = 12;
+        //  console.log(fn)
+
+
+
+        /* 
+            fn:3
+        */
+        // fn() // 5
+        // function fn() {
+        //     console.log(1)
+        // }
+        // fn() // 5
+        // function fn() {
+        //     console.log(2)
+        // }
+        // fn() // 5
+        // var fn = function () {
+        //     console.log(3)
+        // }
+        // fn() // 3
+        // function fn() {
+        //     console.log(4)
+        // }
+        // fn() // 3
+        // function fn() {
+        //     console.log(5)
+        // }
+
+        // 到时候给同学们画图感受一下
+
+
+    </script>
+</body>
+
+</html>
