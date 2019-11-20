@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">11111</div>
+    <script>
+        /* 
+    this: 他是js中的关键字，有特殊的特殊的意义
+    this：他就是函数的执行主体，谁执行的函数this就是谁
+     */
+
+        /* 
+        1、在全局作用域下，this就是window
+        2、函数执行时，看执行函数前有没有 ".",如果有点，那点前面是谁，this就是谁，如有没有点，那this就是window
+        3、自执行函数里的this是window
+        4、给元素事件行为绑定方法，方法里的this指向被绑定的元素本身
+        5、回调函数里的this一般指向window
+         */
+        /*     //  var let = 3;
+            //  console.log(let)
+
+                // console.log(this)
+                // console.log(this === window)
+                // window.a = 12;
+                // console.log(this.a) */
+
+        /*   // function fn(){
+          //     console.log(this)
+          // }
+          // fn()
+
+
+          // var age = 15;
+          // var obj = {
+          //     age: 13,
+          //     name: function(){
+          //         console.log(this.age)
+          //     }
+          // }
+          // obj.name() // this是obj
+          // var f = obj.name;
+          // f()  // this是window*/
+
+        // (function(){
+        //     console.log(this) // window
+        // })()
+
+        // box.onclick = function(){
+        //     console.log(this) 
+        // }
+        // var ary = [1, 2];
+        // ary.map((a,b)=>{
+        //     console.log(this) // window
+        // })
+        // ary.sort((a,b)=>{
+        //     console.log(this); // window
+        //     return a-b
+        // })
+
+        // function fn(a){
+        //     a()
+        // }
+        // fn(function(){
+        //     console.log(this)
+        // })
+
+        // setTimeout(()=>{
+        //     console.log(this) // window
+        // }, 2000)
+
+
+        /*         var num = 100;
+                var obj = {
+                    num: 2,
+                    fn: function () {
+                        var num = 1;
+                        console.log(this) //window
+                        (function (num) { // 100
+                        // this-> window
+                            console.log(this.num + num);//200
+                        })(this.num)
+                        // this->window
+                    }
+                }
+                // obj.fn(); 
+                var f = obj.fn;
+                f() */
+
+
+        var num = 1; // 1 2
+        var obj = {
+            num: 0,
+            fn: function () {
+                num = 1;
+                // this=>obj
+                (function (num) {  // 0 1
+                // this=>window
+                    ++this.num;
+                    num++;
+                    console.log(num)
+                })(this.num) 
+            }
+        }
+        obj.fn(); 
+        console.log(window.num, obj.num);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        栈内存的销毁： 立即销毁、不销毁 、不立即销毁
+        作用域就是栈内存：全局作用域、私有作用域
+
+        1、全局作用域的销毁: 一般情况情况不销毁，除非把当前页面关闭，整个作用域就销毁了
+
+        2、私有作用域的销毁：立即销毁、不销毁 、不立即销毁
+            1、立即销毁：
+            2、不销毁：（1），函数要return一个引用数据类型值，（2），return要被外界接收
+            3、不立即销毁
+        
+        */
+
+        // function fn(){
+        //     var name = 'jinYu',
+        //     age = 18; 
+        // }
+        // fn();
+        // fn();
+
+        // （1）函数要return一个引用数据类型值;（2）return的值要被外界接收
+        
+        // function fn(){
+        //     var name = 'jinYu',
+        //     age= 16;
+        //     return {
+        //         name: name,
+        //         age: age
+        //     }
+        // }
+        // var res = fn()
+
+        function fn(){
+            var a = 12;
+            return function(){
+                console.log(a)
+            }
+        }
+        fn()()
+        // 当外层大函数执行完成之后不能立即销毁，他要继续等待里面的小函数执行完成销毁之后，大函数在销毁
+    </script>
+</body>
+</html>

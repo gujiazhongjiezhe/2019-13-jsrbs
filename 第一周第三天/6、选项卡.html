@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box {
+            width: 500px;
+            margin: 10px auto;
+        }
+
+        ul {
+            list-style: none;
+            position: relative;
+            top: 1px;
+            text-align: center;
+            display: flex;
+
+        }
+
+        li {
+            border: 1px solid black;
+            line-height: 50px;
+            height: 50px;
+            font-size: 30px;
+            margin-right: 20px;
+            padding: 0 10px;
+        }
+
+        #box div {
+            width: 500px;
+            text-align: center;
+            height: 300px;
+            line-height: 300px;
+            font-size: 50px;
+            color: orangered;
+            border: 1px solid black;
+            display: none;
+        }
+
+        #navList li.active {
+            border-bottom-color: white;
+        }
+
+        #box div.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <ul id="navList">
+            <li class="active">erYa</li>
+            <li>jinYu</li>
+            <li>xiaoHua</li>
+        </ul>
+        <div class="active">长的这俊哩</div>
+        <div>你好帅啊</div>
+        <div>哈哈</div>
+    </div>
+    <script>
+        let navList = document.querySelectorAll('#navList li');
+        let tabList = document.querySelectorAll('#box div');
+        console.log(navList, tabList);
+
+        // for (var i = 0; i < navList.length; i++) {
+        //     // 把当前的i保存到元素结构上
+        //     navList[i].setAttribute('myIndex', i);
+        //     // 给每一个li绑定点击事件
+        //     navList[i].onclick = function () {
+        //         // this：点击谁，this就是谁
+        //         //点击相应的li，获取到li结构上的myIndex属性，当做实参传递给fn方法
+        //         fn(this.getAttribute('myIndex'))
+        //     }
+        // }
+
+        function fn(index) {
+            // 清除每一个li和每一个div的样式名
+            for (var i = 0; i < tabList.length; i++) {
+                navList[i].className = ''
+                tabList[i].className = ''
+            }
+            // 给相应的li和div加上样式名
+            navList[index].className = 'active'
+            tabList[index].className = 'active'
+        }
+
+
+
+
+        // for (var i = 0; i < navList.length; i++) {
+        //         // 当往元素的堆内存中存储键值对的时候，自执行函数就已经运行了
+        //     navList[i].onclick = (function(index){
+        //         // 函数return了一个引用数据类型值，而且return的值被外界所接收，所以这个作用域不销毁
+        //         // 把return后面这个小函数赋值给onclick
+        //         // 其实就是利用了函数执行会形成不销毁的作用域，可以保存变量的特点=>这个机制也叫闭包
+        //             return function(){
+        //                 fn(index)
+        //             }
+        //     })(i)
+        // }
+
+        /* 
+        利用了闭包可以保存私有变量的特点，
+        而且这个闭包是不销毁的作用域
+        i=0
+        navList[0].onclick = (function(index){ // 0
+                    return function(){
+                        fn(index)
+                    }
+            })(i) // 0
+
+        i=1
+        navList[1].onclick = (function(index){ // 1
+                    return function(){
+                        fn(index)
+                    }
+            })(i) // 1
+
+        i=2
+        navList[0].onclick = (function(index){ // 2
+                    return function(){
+                        fn(index)
+                    }
+            })(i) // 2
+         */
+
+
+        // for (let i = 0; i < navList.length; i++) {
+        //     // ES6中let在for循环的大括号会形成块级作用域
+        //     navList[i].onclick = function () {
+        //         fn(i)
+        //     }
+        // }
+
+        /* 
+        {i=0
+             navList[0].onclick = function () {fn(i)}
+        }
+
+        {i=1
+             navList[2].onclick = function () {fn(i)}
+        }
+
+        {i=2
+             navList[2].onclick = function () {fn(i)}
+        }
+
+         */
+    </script>
+</body>
+
+</html>
