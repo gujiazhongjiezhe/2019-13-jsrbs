@@ -56,7 +56,7 @@
             obj = { x: 5};// 
         obj.fn = (function () {
             this.x *= ++x; // this.x*++x //
-            return function (y) { // 6
+            return function (y) { //
                 this.x *= (x++) + y; // this.x*(x++) 5*(12+6)
                 console.log(x); 
             }
