@@ -51,6 +51,20 @@
         fn(10);
         obj.fn(15);
         console.log(window.num, obj.num); */
+
+     /*    var x = 3, // 
+            obj = { x: 5};// 
+        obj.fn = (function () {
+            this.x *= ++x; // this.x*++x //
+            return function (y) { // 6
+                this.x *= (x++) + y; // this.x*(x++) 5*(12+6)
+                console.log(x); 
+            }
+        })();
+        var fn = obj.fn;
+        obj.fn(6); // 
+        fn(4); // 
+        console.log(obj.x, x); //  */ 
     </script>
 </body>
 
