@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        单例模式
+        */
+    //    var name = 'erYa';
+    //    var age = 18;
+
+    //    var name = 'jinYu';
+    //    var age = 22;
+
+    //    let person1 = {
+    //        name: 'erYa',
+    //        age:18
+    //    };
+    //    let person2 = {
+    //        name: 'jinYu',
+    //        age: 22
+    //    }
+    //    单例模式：把描述同一个事物特征的信息进行分组归类，放到同一个命名空间下(减少全局变量的污染)
+       console.log(person1)
+
+    // 高级单例模式
+    let person1 = (function(){
+        let fn = function(){};
+        let name= 'erYa';
+        return {
+            name:name,
+            age:18,
+            fn:fn
+        }
+    })()
+
+
+        let person2 = (function(){
+        let fn = function(){};
+        let name= 'jinYu';
+        let age = 18;
+        return {
+            name:name,
+   
+            fn:fn
+        }
+    })()
+
+    let person3 = function(){
+        let name= 'jinYu';
+        let age = 26
+        return {
+            name:name,
+            fn:fn
+        }
+    }
+    console.log(person3) // 这是一个函数，不是person3的个人信息
+    </script>
+</body>
+</html>

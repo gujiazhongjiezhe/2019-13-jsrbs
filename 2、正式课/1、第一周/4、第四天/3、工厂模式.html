@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            工厂模式
+            
+            如果用单例模式去写很多个person就会变的很麻烦，就有了工厂模式
+            特点：批量生产
+            把实现相同功能的代码封装到函数里，以后想运行这个方法，就直接执行这个函数就好了
+            高内聚：提高代码的复用率
+            低耦合：减少页面的重复的代码
+        */
+       function createPerson(name, age){
+            var name = name;
+            var age = age;
+            var sex = 'girl'
+            return {
+                name,
+                age,
+                sex
+            }
+       }
+       let person1 = createPerson('erYa', 18);
+       let person2 = createPerson('jinYu', 18);
+       console.log(person1, person2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+       刚才那些都是js的内置类，但是我们也可以自己去自定义一些类
+       */
+
+        //   构造函数（构造自定义类）
+
+        function Fn(name, age) {
+            /* 
+            1、默认生成一个空对象 {}
+            2、让函数里的this指向这个对象
+            3、代码执行
+            4、默认return 这个对象
+            */
+            this.name = name; // 给this增加键值对
+            this.age = age // 给this增加键值对
+            this.say = function(){}
+            return {}
+        }
+
+        // new: 他是js里的关键字
+        Fn() // 普通函数运行
+
+        let f = new Fn()  // {}
+        let f1 = new Fn('erYa', 18);
+        let f2 = new Fn('jinYu', 18);
+        let f3 = new Fn;
+        let f4 = Fn;
+        console.log(f)
+        console.log(f1)
+        console.log(f2)
+        console.log(f1.age === f2.age)
+        console.log(f1.say === f2.say)
+        console.log(f3)
+        console.log(f4)
+        // new 函数执行 叫做构造函数运行模式，此时的Fn就是自定义的Fn类(构造函数)，函数执行之后的返回结果就是一个对象，叫做实例对象(f就是Fn的实例)
+
+        // 类就是函数数据类型的
+        // 实例是对象数据类型的
+        // 构造函数中的this指向当前实例
+        /* 
+        构造函数和普通函数的不同
+        1、运行上的不同
+            普通函数-->形成私有作用域-->形参赋值-->变量提升-->代码执行-->作用域是否销毁
+            构造函数-->形成私有作用域-->形参赋值-->变量提升-->默认生成一个对象-->把this指向这对象-->代码执行-->默认把这个对象return出去-->作用域是否销毁
+        2、执行上的不同
+            构造函数如果不传实参，可以不加小括号
+        3、构造函数如果手动return一个基本数据值，不能过改变人家的返回值，但是手动return引用数据类型，可以改变构造函数的返回值，此时return的东西已经不是当前类的实例了【所以不要轻易修改构造函数的返回值】
+        */
+        let ary = [1,2];
+        console.log(ary.push);
+        console.log(f1.push)
+        
+    </script>
+</body>
+
+</html>

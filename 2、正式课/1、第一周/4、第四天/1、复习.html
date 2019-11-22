@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        // 复习
+        1、堆栈内存的销毁：
+        堆内存：
+        let obj = {};
+        obj = null
+        2、栈内存：
+        全局作用域：关闭页面，作用域销毁
+        私有作用域：函数执行形成私有作用域：
+        1、不销毁：（1）return一个引用数据类型的值；（2）被外界接收
+        2、不立即销毁：fn()() return一个小函数，马上让小函数执行，这时候外界的作用域不能立即销毁，他要等待小函数执行完成之后再销毁
+        3、立即销毁：不能同时满足上边的两个条件，作用域就销毁了
+
+
+        this：代表了函数的执行主体，谁执行的函数this就是谁
+        1、函数执行时，看执行函数的前面有么有点，如果有点，那点前边是谁，函数里的this就是谁，如果没有点，this就是window
+        2、在全局作用域下，this就是window
+        3、在自执行函数里，this是window
+        4、回调函数里的this是window
+        5、给元素事件行为绑定方法，那方法里的this就是被绑定的元素
+         */
+    //     function fn(a){
+    //         a()
+    //         console.log(this)
+    //     }
+    //    fn(function(){
+    //        console.log(this)
+    //    })
+
+    //    let mun = (function(){
+
+    //    })()
+    //    var obj = {
+    //        fn:(function(){
+
+    //        })()
+    //    }
+    function fn(){
+        return function(){
+
+        }
+    }
+    fn()();
+    </script>
+</body>
+</html>

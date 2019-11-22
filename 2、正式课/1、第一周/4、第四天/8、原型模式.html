@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        原型模式
+
+        构造函数解决了实例的私有属性的问题
+        */  
+       /* 
+       1、每一个函数（普通函数、构造函数）都天生自带一个prototype属性，属性值是一个对象，他里面存储的是实例的公有属性（原型）
+       2、每一个原型都天生自带一个constructor属性，其属性值指向当前类
+       3、每一个对象都天生自带一个__proto__属性，其属性值指向当前所属类的原型
+       */
+        function Fn(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        Fn.prototype.say = function(){
+            // return this
+            console.log(this)
+        }
+        let f1 = new Fn('erYa', 18);
+        let f2 = new Fn('jinYu', 18);
+//         console.log(f1.__proto__.constructor === Fn)
+//         f1.__proto__.s = 999;
+//         console.log(f1)
+        
+
+//         console.log(f1)
+//         console.dir([])
+
+//         let w = new String('3')
+//         Object.prototype.w =6
+//         console.log(f1.__proto__.__proto__  ===  Fn.prototype.__proto__
+// )
+
+
+        f1.say(); // 
+        f1.__proto__.say();
+    </script>
+</body>
+</html>
