@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Foo() {
+            getName = function () {
+                console.log(1);
+            };
+            return this;
+        }
+        Foo.getName = function () {
+            console.log(2);
+        };
+        Foo.prototype.getName = function () {
+            console.log(3);
+        };
+        var getName = function () {
+            console.log(4);
+        };
+
+        function getName() {
+            console.log(5);
+        }
+
+        Foo.getName();
+        getName();
+        Foo().getName();
+        getName();
+        new Foo.getName();
+        new Foo().getName();
+        new new Foo().getName();
+
+        /* 
+        1、成员访问：寻找对象里的属性名所对应的属性值就是成员访问(19)
+            Fn.aa
+        2、new(带参数列表):就是构造函数执行有括号(19)
+        3、new(无参数列表):就是构造函数执行没有括号(18)
+        优先级一样，从左到右运算
+        
+         */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* 
+    1、不能把类的原型重定向
+    2、不能在私有属性上加constructor
+    
+     */
+    //  function Fn(){
+
+    //  }
+    //  Fn.prototype = {};
+    //  let f = new Fn;
+
+    // //  console.log(f.constructor === Fn)
+    //  f.constructor = 6
+    // console.log(f.constructor)
+    //  console.log(f.constructor === Fn)
+
+    // let ary = [1,2,3,1,2,3,1];
+    // function unique(ary){
+    //     let obj = {};
+    //     for (var i = 0; i < ary.length; i++) {
+    //         if(obj[ary[i]] !== undefined){
+    //             ary[i] = ary[ary.length-1];
+    //             ary.length--;
+    //             i--;
+    //             continue;
+    //         }
+    //         obj[ary[i]] = ary[i]
+    //     }
+    // }
+    // unique(ary);
+    // console.log(ary)
+
+    /* 
+    给实例的类封装公共方法需要注意的几点
+    1、你自己封装的方法不能与人家内置的方法同名
+    2、给你自己的方法加前缀
+     */
+
+    //  function myPush(){
+    //      console.log('哈哈')
+    //  }
+    //  Array.prototype.myPush = myPush;
+    //  ary.push(12,12)
+    //  console.log(ary)
+     /* 
+     1、实例的私有属性或者公有属性里的this一般指向当前实例
+     2、构造函数里的this是当前实例
+      */
+      // ary是Array的实例
+      let ary = [1,2,3,1,2,3,1];
+    //     function myUnique(){
+    //         console.log(this)
+    //     let obj = {};
+    //     for (var i = 0; i < this.length; i++) {
+    //         if(obj[this[i]] !== undefined){
+    //             this[i] = this[this.length-1];
+    //             this.length--;
+    //             i--;
+    //             continue;
+    //         }
+    //         obj[this[i]] = this[i]
+    //     }
+    //     return this
+    // }
+    // Array.prototype.myUnique = myUnique;
+    // // ary.myUnique()
+    // console.log(ary)
+    
+    // console.log(ary.myUnique().sort().reverse().slice(1,3))
+    // 如果你想用链式调用，前提是你的方法的返回值必须是当前类的实例
+
+
+    /* 
+    内置类的原型不能被重定向
+     */
+    // Array.prototype = {};
+    // console.log(ary.push)
+
+    // Array.prototype.mySlice = function(n,m){
+    //     return this.slice(n,m)
+    // }
+
+    </script>
+</body>
+</html>
