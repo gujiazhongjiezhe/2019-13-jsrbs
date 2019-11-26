@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <script>
+        let list = document.getElementsByTagName('button');
+
+        // 利用let和{}会形成块级作用域的机制
+        // for (let i = 0; i < list.length; i++) {
+        //    list[i].onclick = function(){
+        //        alert(i)
+        //    }
+        // }
+
+        // 利用闭包会保存变量的机制
+        // for (var i = 0; i < list.length; i++) {
+        //    list[i].onclick = (function(index){
+        //     return function(){
+        //         alert(index)
+        //     }
+        //    })(i)
+        // }
+
+        // 利用往元素身上增加自定义属性的方式
+        // for (var i = 0; i < list.length; i++) {
+        //     list[i].index = i
+        //    list[i].onclick = function(){
+        //     alert(this.index)
+        //    }
+        // }
+        // 利用往元素的结构体上增加属性的方法
+        for (var i = 0; i < list.length; i++) {
+            list[i].setAttribute('index', i)
+            list[i].onclick = function () {
+                alert(this.getAttribute('index'))
+            }
+        }
+    </script>
+</body>
+
+</html>

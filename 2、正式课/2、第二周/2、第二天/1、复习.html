@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box" calss="name">1111</div>
+    <script>
+        // 1、数据类型检测
+        // 2、函数
+        // 3、三个循环、三个判断
+        // 3、数组方法
+        // 4、字符串方法
+        // 5、Math
+        // 6、Date
+
+        /* 
+        js的数据类型：
+            基本数据类型：
+                Number、String、Boolean、Null、Undefined
+            引用数据类型：
+                Object
+                    + {}
+                    + []
+                    + /^$/
+                    + Math
+                    + Date的实例
+                    + 实例
+                    + 函数
+                    + 原型
+                    + arguments
+                    + 元素集合
+                Function
+                    + 普通函数
+                    + 构造函数（类）
+         */
+
+        // let i = 2; // 3  4  5  6
+        // console.log(i++ == ++i); // 2  4  false
+        // console.log(++i == i++); // 5  5  true
+        // console.log(i); // 6
+
+        // i++:先取值后运算
+        // ++i：先运算后取值
+        // +、*=
+        // let num = 10;
+        // num+=20 // num = num+20
+        // &&  ||
+
+
+        // &&:前边转布尔是true取后边
+        // ||: 前边转布尔是false取后边
+        // let ss = 1&&2
+        // if(1&&2){}
+        // if(1||2){}
+        /* 
+        数字 == 字符串：两边全部转数字
+        数字 == 布尔：两边全部转数字
+        数字 == 对象：两边全部转数字
+        布尔 == 对象：两边全部转数字
+        字符串 == 对象：对象转字符串
+        字符串 == 布尔 ：两边全部转数字
+        对象 == 对象：空间地址
+        null == undefined // true
+        null == null // true
+        undefined == undefined // true
+        NaN和谁都不相等（包括自己）
+         */
+
+        /* 
+        [] == []  // false
+        '' == 0  // true
+        [0] == false // true
+        true == 1 // 1
+        ({}) == '' // false
+        [] == 0 // true
+        0 == null // false
+        '{}' == 1 // false
+        undefined == null  // true
+        null == undefined  // true
+        ({name:1}) == ({name:1}) // false
+        undefined == 0 // false
+         */
+        //  let obj = {};
+        //  let ss = obj;
+        //  obj == ss // true
+        // let obj = {
+        //     name: 3,
+        //     age: 5
+        // }
+        // obj.name;
+        // obj['name']
+        // let ss = 'name';
+        // obj[ss]
+
+        // function Fn(){
+        //     this.name = 12;
+        //     this.age = 13;
+        //     this[3] = 'w'
+        // }
+        // Fn.prototype.ss = 123;
+        // let f = new Fn;
+        // // for in可以遍历出私有和公有属性
+        // for(var key in f){
+        //     if(f.hasOwnProperty(key)){
+        //         console.log(key)
+        //     }  
+        // }
+
+        // function fn(name){
+        //     /* 
+        //     1、形成私有作用域
+        //     2、形参赋值
+        //     3、变量提升
+        //     4、代码执行
+        //     5、作用域是否销毁
+        //     */
+        // }
+        // fn(12)
+
+        // function fn(ss) {
+        //    return ss() // undefined
+
+        // }
+        // let a = fn(function () {})
+        // console.log(a)
+
+        // let name = 'erYa';
+        // name = (function(){
+
+        //     return 
+        // })()
+
+        // function fn(ss){
+        //     ss(function(){
+        //         console.log('哈哈');
+        //         return 3
+        //     })
+        //     return 4
+        // }
+        // let a = fn(function(m){
+        //    return m()
+        //     // return 5
+        // })
+        // console.log(a)
+        //     let ary = [2,3,4,5,6];
+        // for (var i = 0; i < ary.length; i++) {
+        //     console.log(ary[i])
+        //     continue;
+        //     break;
+        // }
+
+        // let val = '2';
+        // switch(val){
+        //     case '1':
+        //         console.log(1);
+        //         break;
+        //     case '2':
+        //         console.log(2);
+        //         break;
+        //     default:
+        //         console.log(3);
+        // }
+        // let a = 10
+        // console.time()
+        // while (a>5) {
+        //         console.log(1)
+        // }
+        // console.timeEnd()
+        // console.log(2);
+            // if(){}
+
+            // if(){
+
+            // }
+            // else if(){
+
+            // }
+            // else if(){
+
+            // }
+            // else{
+
+            // }
+            // if(){
+
+            // }
+            // else {
+
+            // }
+            // 5? (console.log(1),console.log(2)):console.log(2)
+            // function fn(num){
+            //     if(num >5){
+            //         return '哈哈'
+            //     }
+            //     else {
+            //         return '嗯嗯'
+            //     }
+            //     return num>5?'哈哈':'嗯嗯'
+            // }
+            // fn(3)
+
+        /* 
+        数组
+        1、push、unshift、shift、pop、splice、reverse、sort
+        2、slice(n,m)、concat()、join('$').split('$')、indexof(n,m)【1,2】
+        lastIndexOf(n,m)【2,3】
+        includes、forEach((item, index)=>{
+            // item是数组的每一项
+            // index是数组的每一项的索引
+            数组有多少项就循环多少次
+        })
+        */
+    //    let ary = [1,2,3,1,2,3]
+    //    splice(n,m,x)
+    //    ary.length-1 // 
+    //    ary.splice(n.length-1,1)
+    //    n.length-- // n.length = n.length-1
+
+    //    let ary = [1111,28,3,17,3,3,1];
+    //    ary.sort((a,b)=>{return b-a})
+    // let ary = [1111,28,3,17,3,3,1];
+    // let res = ary.map((item, index)=>{
+    //     return item+1
+    // })
+    // console.log(res)
+
+    /* 
+    charAt(n)  // 如果没有这一项返回 ''
+    str[100] // undefiend
+    charCodeAt(n)
+
+    substr(n,m):从索引n开始，截取m个
+    substring(n,m):从索引n开始。截取到索引m（不包括索引m对应的那一项）
+    slice：从索引n开始。截取到索引m（不包括索引m对应的那一项）
+    
+    split(),
+    replace(n,m): [老的，新的] ，默认只能替换一个
+    replace(/w/g,m)
+    replace(n,m).replace(n,m).replace(n,m).replace(n,m)
+    toUpperCase()转大写
+    toLowerCase()转小写
+    trim去空格trimLeft、trimRight
+    indexOf、lastIndexOf、includes
+    */
+//    let str = '11111';
+//    console.log(str.includes(1))
+
+        // let box = document.getElementById('box');
+        // let box = document.getElementsByClassName('name')[0];
+        // let box = document.getElementsByTagName('div')[0]
+        // let box = document.querySelectorAll('div')[0]
+        // let box = document.querySelector('div')
+
+       
+        /* 
+         Math:
+         max
+         min
+         PI:3.1415926
+         floor
+         ceil
+         round
+         random
+         sqrt
+         pow(n,m)
+         abs
+        */
+       // 我想获取3到5之间的随机整数（包括3到5）(n,m)
+        // Math.round(Math.random()*(5-3)+3)  [(m-n)+n]
+
+        // 我想获取n到m之间的随机整数（包括n到和m）
+        // Math.round(Math.random()*(m-n)+n) 
+        // Math.max(...[1,23,5,2,1,3])
+
+        /* 
+        Date()
+        */
+      let s =  new Date();
+      console.log(s.getFullYear())
+      // month获取的是0~11（对应的是1~12月）
+      // day获取的是0是星期天，1~6就是星期一到星期六
+    //   s.getTime()// 获取当前时间距离1970年1月1号 00:00的时间差（毫秒）
+    //   previousElementSibling
+    //   appendChild
+    //   insertBefore
+        let ary = [1,2];
+        let obj = {}
+        let num = 1
+    console.log(Object.prototype.toString.call(true)) // 他的返回值是一个字符串，里边是 '[object 你当前实例的所属类]'
+    </script>
+</body>
+
+</html>

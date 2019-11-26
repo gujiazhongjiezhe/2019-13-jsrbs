@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function myCall(context,...arg){
+        // this->fn    context->obj
+        context = context || window
+        let res =null;
+        context.fn = this;
+       res =  context.fn(...arg)
+        delete context.fn
+        return res
+
+       } 
+       Function.prototype.myCall = myCall;
+
+       function fn(n,m){
+           console.log(this,n,m)
+        //    return 1
+       }
+    //    fn()
+       console.log(fn.call())
+       let obj = {name:3}
+        //    obj.fn = fn;
+        //    obj.fn()
+        //    delete obj.fn
+       console.log(fn.myCall(obj,12,23)) 
+
+    </script>
+</body>
+</html>

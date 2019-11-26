@@ -1,0 +1,23 @@
+一、(20分)
+1、sort((a,b)=>{return b-a})
+2、ary.length--、ary.pop()、ary.splice(ary.length-1,1)
+3、ary.slice(n,m+1)
+4、从索引n开始删除m项，用x替换
+5、appendChild、insertBefore
+6、previousElementSibling
+7、Math.round(Math.random()*(m-n)+n)
+8、replace
+9、document.getElementById('tab')
+document.getElementsByTagName('div')[0]
+document.getElementsByClassName('tabCon')[0]
+10、true    true
+
+二、（60分）
+1、undefind  undefined
+2、‘珠峰’5000      undefined  5000
+3、[300]   [100]
+4、9  16  36  64
+5、4  5  14  22
+6、true   20  NaN   Object
+
+三、（20分）

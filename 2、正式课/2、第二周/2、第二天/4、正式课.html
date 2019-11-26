@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(num); // un
+        if(!('num' in window)){
+            var num = 100;
+        }
+        console.log(num); // un
+        ![] == false  // true
+
+
+        /* 
+        1、全局下this是window
+        2、函数执行时，看执行函数的前面有没有点，如果有点，那函数里的this就是点前面的东西，如果没有点就是window
+        3、自执行函数里的this是window
+        4、给元素事件行为绑定方法，那方法里的this就是当前被绑定的元素本身
+        5、回调函数里的this一般都是window
+        6、构造函数里的this是当前实例
+        7、实例的私有属性或者公有属性里的this一般是当前实例
+        */
+
+        // function fn(s){
+        //     s()
+        // }
+        // fn(function(){})
+        /* 
+        所有函数都是Function的实例
+        Function的原型是一个匿名函数,但是他也是对象，你就正常使用就行
+        当函数作为对象时，有length和name属性
+        length代表形参个数
+        name代表函数名字
+        */
+      console.dir(function fn(name, age){}) 
+      let obj = {
+          fn:function(){}
+      }
+
+    </script>
+</body>
+</html>
