@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        原型继承：继承公有和私有
+        中间类继承：公有
+        call继承：私有
+        寄生混合继承：公有和私有
+        */
+    //    function A(){
+    //        this.a = 10
+    //    }
+    //    Function.prototype.r =3;
+    //    A.prototype.getX = function(){}
+    //    function B(){
+
+    //     /* 
+    //     构造函数里的this是当前实例
+    //     {x:20，a：10}
+    //     */
+       
+    //     this.x = 20; // 
+    //     A.call(this) // 让函数A以普通函数的身份运行，并且把函数A的this指向了类B的实例
+    //    }
+    //    let f = new B;
+       
+    //    console.log(f.getX()) // 报错
+        // function A (name){
+        //     this.a = name
+        // }
+        // A.prototype.getX = function(){
+        //     console.log('haha')
+        // }
+        // function B(age){
+        //     this.x = age
+        // }
+
+        // B.prototype = new A(20) // ->{a:20}
+        // let f = new B(10);
+        // console.log(f.a) // 20
+        // console.log(f.getX())
+            // function A(){
+
+            // }
+            // let f = new A;
+            // f.__proto__ = Array.prototype;
+            // console.log(f.push)
+                let ary = [1,2,3,4]
+                
+                ary.__proto__ = String.prototype;
+               console.log(ary.charAt) 
+    </script>
+</body>
+</html>

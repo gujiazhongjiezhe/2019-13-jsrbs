@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 继承：原型继承:继承私有属性，又继承公有属性 */
+        // function A(){
+        //     this.r = 10
+        // }
+        // A.prototype.getX = function(){
+        //     console.log('恭喜发财')
+        // }
+        // function B(){
+        //     this.x = 20;
+        // }
+
+        // B.prototype = new A;
+        /* 
+        让类B的原型指向类A的实例，所以以后类B的实例去找属性，既可以继承人家类A的私有属性，有可以继承公有属性
+
+        这种方式不可以使用到内置类，因为内置类的原型不能修改
+         */
+        // let f = new B;
+        // console.log(f.r)
+        // f.getX()
+
+
+        // 中间类继承：只能继承公有属性
+        // function Fn(){
+        //     console.log(arguments instanceof Array);
+        //     arguments.__proto__ = Array.prototype;
+        //     /* 
+        //     arguments不是Array的实例，所以不能使用Array的原型的方法，
+        //     但是现在我就想使用，所以我手动把arguments的__proto__指向Array的原型，这样有以后arguments就可以通过__proto__找到Array原型上的方法了，这种继承就是中间类继承
+
+        //      */
+        //     console.log(arguments.push(33))
+        //     console.log(arguments)
+        // }
+        // Fn()
+        // let ary = [12,33,45,12,56,22];
+
+        //     // 1、Math.max
+        //    console.log(Math.max(...ary)) 
+        //    console.log(Math.min(...ary)) 
+        //    // 2、sort
+        //    ary.sort((a,b)=>{return a-b})
+        //    console.log(ary[ary.length-1])
+        //    console.log(ary[0])
+        //    // 3、apply
+        //    console.log(Math.max.apply('',ary))
+        //    console.log(Math.min.apply('',ary))
+        //    // 4、比较
+        //    let max = ary[0]
+        //    for (var i = 1; i < ary.length; i++) {
+        //       var item = ary[i];
+        //       if(item>max)max = item
+        //         // 条件?成立:不成立
+        //         // item>max?max = item:null
+        //    }
+        //    console.log(max)
+
+
+        //=====================================
+        /* 
+        call/apply/bind
+        这三个方法都是Function原型上的方法，那就是说Function的实例就可以调取使用，所有的函数都是Function的实例
+        */
+        // function fn() {
+        //     console.log(this)
+        // }
+        // fn()
+        // let obj = {}
+        // obj.fn = fn;
+        // obj.fn();
+        // delete obj.fn
+        // fn.call(obj)
+        /* 
+        1、fn通过__proto__找到当前所属类的原型上的方法call，
+        2、让call方法执行，并且给call传递实参，
+        3、让call方法执行的同时，call也让fn方法执行，通过把fn的this指向了传递的第一个参数
+
+        apply：跟call一样，就是第二个参数必须是数组或者类数组
+        bind:他也是改变实例的this指向，但是不会执行实例，只会提前改变实例的this指向，他的返回值就是改变this之后的新函数
+        */
+        //    function fn(n,m){
+        //     console.log(this, n,m)
+        //    }
+        //    let obj = {}
+        //    fn.apply(obj,[10, 20])
+
+        // function fn(n, m) {
+        //     console.log(this, n, m)
+        // }
+        // let obj = {}
+        // fn = fn.bind(obj,10,20);
+        // fn()
+
+        /* 
+            在非严格模式下，传空、null、undefined，this是window
+            在严格模式下，传空、undefined，this是undefined，传null，this是null
+        */
+    </script>
+</body>
+
+</html>

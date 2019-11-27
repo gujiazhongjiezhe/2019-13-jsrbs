@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid orangered;
+            text-align: center;
+        }
+
+        li {
+            border: 1px solid green;
+            background: rgba(218, 112, 214, 0.356);
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        button {
+            background: orangered;
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="ul">
+        <li>34</li>
+        <li>32</li>
+        <li>56</li>
+        <li>12</li>
+        <li>75</li>
+    </ul>
+    <button id="btn">排序</button>
+    <script src="./utils.js"></script>
+    <script>
+        /* 
+        1、想操作谁就获取谁
+        2、给相应的元素绑定相应的事件(方法)
+        3、在方法里做你想做的事
+            1、把元素集合转数组
+            2、把数组进行排序
+            3、把数组里的数据插入到页面
+        */
+        // 1、获取元素
+        let ul = document.getElementById('ul');
+        let btn = document.getElementById('btn');
+        let list = ul.getElementsByTagName('li');
+        let flag = true; // 开关标识
+        //    console.log(ul,btn,list)
+    //   let ss =   document.createElement('li');
+    //   ul.appendChild(ss);
+    //   console.log(list)
+        // 2、给元素事件绑定相应的方法
+        btn.onclick = fn
+
+        function fn() {
+            /* 
+            1、把元素集合转数组
+            2、把数组进行排序
+            3、把数组里的数据插入到页面
+            */
+            // 1、把元素集合转数组
+            let ary = utils.toArray(list);
+            //2、给数组排序
+            // ary.sort((a, b) => {
+            //     return Number(a.innerHTML) - Number(b.innerHTML);
+            // })
+            if(flag){
+                // 如果标识是true，先把flag改为false，在把数组进行从小到大排序
+                flag = false
+                ary.sort((a, b) => Number(a.innerHTML) - Number(b.innerHTML));
+            }
+            else {
+                // 如果标识是false，先把flag改为true，在把数组进行从大到小排序
+                flag = true
+                ary.sort((a, b) => Number(b.innerHTML) - Number(a.innerHTML));
+            }
+
+            
+            //    console.log(ary)
+            // 3、把排好序的元素插到页面
+            for (var i = 0; i < ary.length; i++) {
+                ul.appendChild(ary[i])
+            }
+            
+        }
+        /* 
+         DOM映射机制：页面中的标签和js中的获取的DOM元素是一一关联的，如果你把标签的内容改了，那js中的dom元素也跟着变
+        */
+    </script>
+
+</body>
+
+</html>

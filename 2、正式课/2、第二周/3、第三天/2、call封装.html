@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // call的封装
+        function myCall(context, ...arg) {
+            // arg接收的是传递的从第二个开始的实参
+            // this->fn  context->obj
+            context = context || window;
+            // 处理传参的特殊情况，如果传的是空、null和undefined，按context的值就是window
+            let res = null; // 创建一个变量，准备接收this执行之后的返回值
+            context.$fn = this; // 给context增加键值对
+            res = context.$fn(...arg); // 让this执行
+            delete context.$fn // 从obj中删除this
+            return res // 把this执行之后的返回值return 出去
+
+        }
+        Function.prototype.myCall = myCall;
+
+        function fn() {
+            console.log(this)
+            console.log(arguments);
+            // return 1
+        }
+        fn()
+        let obj = {
+            name: 3
+        }
+        console.log(fn.myCall(obj, 10, 20, 30))
+    </script>
+</body>
+
+</html>
