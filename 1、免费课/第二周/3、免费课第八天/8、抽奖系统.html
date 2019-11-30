@@ -11,20 +11,37 @@
             margin: 0;
         }
         #box {
-            width: 500px;
+            width: 800px;
             margin: 200px auto;
             text-align: center;
         }
         #show {
             color: rgba(255, 0, 0, 0.918);
-            font-size: 40px;
+            font-size: 60px;
             font-weight: 700;
+            display: block;
+            /* width: 200px; */
+            height: 100px;
+            line-height: 100px;
+
+        }
+        button {
+            display: block;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background: orangered;
+            color: white;
+            font-size: 20px;
+            margin:  10px auto;
+
         }
     </style>
 </head>
 <body>
     <div id = "box">
-        <span id="show">请点击开始</span><button id="btn">开始</button>
+        <span id="show">请点击开始</span>
+        <button id="btn">开始</button>
     </div>
     <script>
         let show = document.getElementById('show');
@@ -52,7 +69,7 @@
         }
 
         function createName(){
-            let ary = ['孙鹏贵', '郭靖', '吴梦婷', '苏鑫', '乔岩','刘琨鹏', '杨扬', '梁术青', '贾延楷', '刘胜', '王裴', '罗宏杰','肖依悦', '张岩', '屈军军', '付晋晋', '赵宁磊', '信为亚', '池瑞镇', '赵猛', '刘刚 ', '孙龙', '赵勇', '刘文甜', '王珊珊', '邢民华', '刘宝华', '宋泽', '杨成祥', '杨晨涛', '王兴楠', '李媛'];
+            let ary = ['瑾瑜', '郭靖', '吴梦婷', '苏鑫', '乔岩','刘琨鹏', '杨扬', '成云开', '贾延楷', '刘胜', '王裴', '罗宏杰','肖依悦', '屈军军', '付晋晋', '信为亚', '池瑞镇', '赵猛', '刘刚 ', '蒋子彤','孙龙', '赵勇', '刘文甜', '王珊珊', '邢民华', '刘宝华', '宋泽', '王小飞', '杨晨涛', '王兴楠', '冉德鹏', '王朝森', '孙彭贵'];
             let index = Math.round(Math.random()*(ary.length-1+0)+0);
             // 随机获取数组的额一个索引
             let name = ary[index]; // 通过索引获取数组里的一个名字

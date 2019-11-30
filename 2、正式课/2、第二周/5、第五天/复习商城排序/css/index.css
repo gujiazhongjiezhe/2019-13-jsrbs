@@ -1,0 +1,84 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+}
+#content .header {
+    width: 1200px;
+    margin: 30px auto;
+    background: rgba(255, 68, 0, 0.603);
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    color: white;
+}
+#content .header span {
+    margin-right: 10px;
+    color: black;
+}
+#content .header a {
+    color: white;
+    position: relative;
+    margin-right: 20px;
+}
+#content .header a:hover {
+    color: orangered;
+}
+#content .header a i {
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    position: absolute;
+}
+#content .header a i.up {
+    top:3px;
+    border-bottom:4px solid white
+}
+#content .header a i.up.bg {
+    border-bottom:4px solid orangered
+}
+#content .header a i.down {
+    top:14px;
+    border-top:4px solid white
+}
+#content .header a i.down.bg {
+    border-top:4px solid orangered
+}
+/* =============================== */
+
+#cardBox {
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap; /* 让li自动折行 */
+}
+#cardBox li {
+    width: 24%;
+    margin: 10px 0.5%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: white;
+    box-shadow: 8px 8px 5px #8888889f
+}
+#cardBox li img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.2S;
+    cursor: pointer;
+    opacity: .8;
+}
+#cardBox li img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+#cardBox li span {
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: orangered;
+    text-shadow: 1px 1px 5px #88888880
+}
+
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        1、作用域：全局作用域、私有作用域(全局变量，私有变量)
+        2、变量提升：在代码运行之前，浏览器会把代码检测一遍，把带var和function的进行提前的声明的定义，var只声明不定义，function既声明有定义
+            特殊情况：
+            1、匿名函数没有变量提升
+            2、if里不管条件都会变量提升，新版本里的function只声明不定义
+            3、变量提升发生在等号左边
+            4、return后面的代码不执行，但是会变量提升
+        3、堆栈内存的销毁
+            堆内存：存储引用值;没人占用就销毁了
+            栈内存：为代码运行提供环境，存储变量，基本值，引用地址
+                不销毁：return一个引用值被外界接收
+                不立即销毁：当前别人还在使用你的作用域呢，你暂时不能销毁
+                立即销毁：不满足（return一个引用值被外界接收）就销毁
+
+        4、this
+            1、箭头函数没有this，要是在箭头函数里使用this，就看他上一级作用域的this
+            2、全局作用域下的this是window
+            3、回调函数的this是window
+            4、自执行函数里的this是window
+            5、函数执行时，看执行函数前有没有点，如果有点，那点前边是谁this就是谁，如果没有点，那this就是window
+            6、给元素事件行为绑定方法，方法里的this就是当前被绑定元素的本身
+            7、构造函数里的this是当前实例
+            8、实例的公有方法和私有方法里的this一般情况是当前实例
+        5、模式：
+            1、单例模式(高级单例模式)：描述相同书屋特征的信息分组归类到用一个命名空间下
+            2、工厂模式：把实现相同功能的代码封装到函数里，以后想执行这个方法，直接执行这个函数就行了
+            3、构造函数模式
+                和普通函数的区别
+                1、运行上的区别(默认生成一个对象，把this指向这个对象，代码执行，默认return this)
+                2、构造函数执行时如果不传实参，可以不加小括号
+                3、手动return的是基本值，不会改变构造函数的return结果，但是如果手动return引用值，那return的就不是实例了
+            4、原型模式
+                1、每一个函数天生自带一个prototype属性，其属性值是一个对象，存储的是当前类实例的公有属性(原型)
+                2、每一个原型天生自带一个constructor属性，其属性值指向当前的类
+                3、每一个对象都有一个__proto__,指向自己的类的原型
+
+                1、Function是每一个函数的基类
+                2、Object是每一个对象的基类
+                3、Object的原型的__proto__指向自己，但是没有意义，那就是null
+                4、每一个函数都是Function的实例，(包括他自己，他的__proto__执行自己的原型)
+                5、Object是类，类是函数，按他的__proto__指向Function的原型
+                6、所有的原型(都是对象)都指向Object的原型
+                7、Function的原型是个匿名函数()
+            5、原型链：查找实例的一个属性，先看自己私有的有没有，没有的话通过__proto__查找当前所属类的原型上有没有，如果还没有，就通过原型的__proto__继承找他的所属类的原型，直到找到Object的原型为止，如果还没有就是undefined
+            6、作用域链：函数执行形成私有作用域，在私有组用域里使用一个变量，先看自己的私有的有没有，如果没有，就往上一级作用域查找，直到找到全局作用域为止，如果还没有就报错
+            7、他的上一级作用域在创建函数的时候就已经确定了，(在哪创建的，那他的上一级作用域就是谁)跟函数在哪执行的没有关系
+            8、原型重定向:（内置类的原型不能重定向）
+            9、继承：
+                1、原型继承：继承公有和私有属性
+                2、中间类继承：继承公有属性
+                3、call继承：继承私有属性
+                4、寄生混合继承：继承公有和私有属性
+                
+        */
+
+
+/*         function A() {
+            this.a = 10
+        }
+        A.prototype.getX = function () {
+            console.log('jingjing')
+        }
+
+        function B() {
+            // this是当前实例
+            this.x = 20;
+            this.y = A.call(this)
+        }
+        B.prototype = Object.create(A.prototype);
+        // 创建一个空对象，让空对象的__proto__指向A.prototype，然后把这个空对象赋值给B.prototype
+            // f->{getY:f}->{A.prototype; getX:f}->{Object.prototype}
+        let f = new B();
+        f.__proto__.getY = function(){
+            console.log('哈哈哈哈')
+        }
+        let f1 = new A;
+        // f1->{A.prototype; getX:f}->{Object.prototype}
+        // console.log(f);
+        f.getX() //   'jingjing'
+        f1.getY() // 报错
+       let s =  f.getY(); // '哈哈哈哈'
+       console.log(s) // undefined */
+
+
+
+        // function fn(name, age){
+        //     return {
+        //         name,
+        //         age
+        //     }
+        // }
+        // console.log(fn('erYa', 18))
+        // var name = 3; // f
+        // function fn(){
+
+        //     name = function(){}
+        // }
+        // fn()
+        // name = null
+        // Array.prototype.push()
+        // [].push.call(1)
+
+        // let f = ()=>{
+        //     console.log(this)
+        // }
+        // f.call(3)
+
+
+
+        // let Fn = ()=>{
+        //     this.x =10
+        // }
+        // let f = new Fn();
+
+        /* 
+        创建一个方法，
+        */
+        //    function fn(ary, cur){
+        //         let newAry = [];
+        //         for (var i = 0; i < ary.length; i++) {
+        //            if(ary[i] !== cur){
+        //                newAry.push(ary[i])
+        //            }
+        //         }
+        //         return newAry
+        //    }
+        //    let ary = [1,2,3,1,2,3,1];
+        //    let f = fn(ary, 1);
+        //    console.log(f) // [2,3,2,3]
+        //    console.log(ary)// [1,2,3,1,2,3,1]
+
+    //     function fn(){
+    //         console.log(this)
+    //     }
+    //     let obj = {name:3}
+    //    fn =  fn.bind(obj);
+    //     fn()
+
+    Number.prototype.plus = function(num){
+        
+        return this+num
+    }
+    Number.prototype.minus = function(num){
+        return this-num
+    }
+    let n = 10;
+    let m = n.plus(10).minus(5);
+    console.log(m);//=>15（10+10-5）
+
+    </script>
+</body>
+
+</html>
