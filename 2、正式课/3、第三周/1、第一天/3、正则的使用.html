@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* 
+正则的分组()
+        1、括号改改变了正则的优先级
+        let reg = /^18|29$/
+        */ 
+            //    let reg = /^18|29$/
+            //    console.log(reg.test('18')) // true
+            //    console.log(reg.test('29')) // true
+            //    console.log(reg.test('189')) // true
+            //    console.log(reg.test('129')) // true
+            //    console.log(reg.test('28')) // false
+
+            // let reg = /^(18|29)$/
+            // console.log(reg.test('18')) // true
+            // console.log(reg.test('29')) // true
+            // console.log(reg.test('189')) // true
+            // console.log(reg.test('129')) // true
+            // console.log(reg.test('28')) // false
+
+        // 2、分组引用：([a-z])\1:相当于把前面一样的值拿过来，在出现一次
+        // let str = 'moon'
+        // let reg = /^[a-z]{4}$/
+        // console.log(reg.test('asdf')) // true
+
+        // let reg = /^[a-z]([a-z])\1\1[a-z]$/
+        // console.log(reg.test('foood')) // true
+
+        // 3、分组捕获
+    // 正则捕获的时候会把最大的内容捕获一次，然后在把每一个分组捕获一次
+
+// 转义字符(\可以把在正则中有特殊意义的字符转义为普通字符，也可以把普通字符转换以有意义的字符)
+    // let reg = /^23\.45$/
+    // .在正则中代除换行符外的任意字符
+    //  \可以把有特殊意义的元字符转换为普通字符，也可以把普通字符转换为有意义的元字符
+    // console.log(reg.test('23e45')) // false
+    // console.log(reg.test('23.45')) // true
+
+    
+    // let str = '中\国'
+    // console.log(str) // '中国'
+
+    // let str = '中\\国'  // 把第二个\进行转义，转义为普通字符
+    // console.log(str) // '中\国'
+
+    // 手机号匹配
+    // let reg = /^1[3-9]\d{9}$/
+    // /* 
+    // 1、十一位数字
+    // 2、第一位是1，第二位是3到9的数字
+    // */
+    // console.log(reg.test('15231105887'))
+
+// []
+        // 1、中括号里放的一般都是普通字符
+        // let reg = /^[@+]$/
+        // console.log(reg.test('+')) // true
+        // console.log(reg.test('@')) // true
+
+        // let reg = /^[\\d]$/
+        // console.log(reg.test('d')) // true
+        // console.log(reg.test('\\')) // true
+
+        // 2、中括号不允许出现多位数
+        // let reg = /^[12-57]$/  //  1  2-5 7
+        // console.log(reg.test('30')) // false
+        // console.log(reg.test('1')) // true
+        // console.log(reg.test('4')) // true
+        // console.log(reg.test('7')) // true
+        // console.log(reg.test('6')) // false
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        正则:
+        正则是js的内置类RegExp
+        正则就是处理字符串的，他是跟字符串
+        还是一个检验字符串的规则
+        test：匹配一个字符串是否满足这个规则，如果满足于返回true，反之返回false
+        exec：捕获
+         */
+
+        // let reg = /\d{2}/
+        // console.log(reg.test('22ww'))
+
+        let reg = /^3$/
+        console.log(reg.test('3werr')) // fasle
+        console.log(reg.test('32'))
+        console.dir(RegExp)
+        console.log(reg.exec('3'))
+        // ["3", index: 0, input: "3", groups: undefined] 
+        // 
+        // 数组的第一项是捕获的内容
+        // index是捕获内容的开始位置的做引
+        // input是原字符串
+    </script>
+</body>
+</html>
