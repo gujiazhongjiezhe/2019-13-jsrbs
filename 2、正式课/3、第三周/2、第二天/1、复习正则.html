@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        正则就是js的内置类
+        就是匹配字符串的一种规则
+        正则由两部分组成：
+            1、元字符
+            2、修饰符
+        
+        1、修饰符：
+            i:不区分大小写
+            m:多行匹配
+            g：全局匹配
+
+        2、元字符
+            1、特殊元字符
+            2、普通元字符
+            3、量词元字符
+        
+            量词元字符：
+                * 代表0到多次  //
+                + 出现1到多次   //
+                ? 出现0到一次    //
+                {n} 出现n次
+                {n,} 至少出现n次
+                {n,m} 出现n到m次  //
+
+            特殊元字符：
+            \:转义，那普通字符转义为有意义的元字符，或者把有意义的元字符转义为普通字符    //
+            .:除了换行符以外的任意字符
+            ^: 以什么什么开头  //
+            $：以什么什么结尾  //
+            \n 换行符
+            \d 0到9之间的一个数字   //
+            \D 非0到9之间的一个数字
+            \w 数字、字母、下划线
+            \s 空白字符
+            \t 制表符
+            \b 单词边界
+            x|y x和y的任意一个   //
+            [axy] a和x和y的任意一个  //
+            [a-z] a到z这个范围内的任意一个  // 
+            [^a-z] a到z这个范围外的任意一个
+            (?:) 只匹配不捕获
+            (?=) 正向预查
+            (?!) 负向预查
+            () 分组   //
+
+        */
+       let reg = /G/i
+       console.log(reg.test('g')) // true
+    </script>
+</body>
+</html>

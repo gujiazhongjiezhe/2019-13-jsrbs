@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        匹配有效数字
+        1、开头有可能出现+-
+        2、数字如果是一位， 有可能是两位，
+        3、小数点部分
+        */
+        //    let reg = /^[+-]?(\d|([1-9]\d+))(\.\d+)?$/
+        //    console.log(reg.test('13.53')) // true
+        //    console.log(reg.test('13.5.3')) // false
+        //    console.log(reg.test('-3.75')) // true
+
+        /* 
+        验证密码的
+        数字、字母、下划线
+        6到16位
+        let reg = /^\w{6,16}$/
+        */
+
+        /* 
+        匹配邮箱的
+         let reg = /^[a-zA-Z0-9-_]+@[a-z0-9]+(\.[a-z]+)+$/
+        12242@qq.com.cn
+        */
+        //    let reg = /^[a-zA-Z0-9-_]+@[a-z0-9]+(\.[a-z]+)+$/
+        //    console.log(reg.test('12242@qq.com.cn')) // true
+        //    console.log(reg.test('@qq.com.cn')) // false
+        /* 
+            中文名的  [\u4E00-\u9FA5]
+            let reg = /^[\u4E00-\u9FA5]{2,6}(·[\u4E00-\u9FA5]{2.6}){0,2}$/
+        */
+
+        // let reg = /^[\u4E00-\u9FA5]{2,6}(·[\u4E00-\u9FA5]{2,6}){0,2}$/
+        // console.log(reg.test('尼古拉斯·凯奇·赵四')) // true
+        // console.log(reg.test('我的天·帅的不要不要'))
+        // '尼古拉斯·凯奇·四'
+
+        /* 
+        身份证号码的
+        1、18位
+        3、前六位是省市区
+        4、中间8位是生日
+        5、最后四位
+             1、前两位是局子代码
+             2、第三位 奇数是男孩， 偶数是女孩
+             3、最后一位有可能是X，也有可能是数字
+        */
+        //   let reg = /\d{17}(\d|X)/
+        let reg = /^(\d{6})(\d{4})(\d{2})(\d{2})(?:\d{2})(\d)(?:\d|X)$/;
+        console.log(reg.test('130981198503201111'))
+        console.log(reg.exec('130981198503201111'))
+        //  ["130981198503201111", "130981", "1985", "03", "20", "1", index: 0, input: "130981198503201111", groups: undefined]
+        /* 
+        正则的捕获：
+        返回值是一个数组，如果捕获不到是null
+            1、数组的第一项是第一次捕获到的内容
+            2、以后数组的每一项是第一次分组捕获的内容
+            3、index：第一次捕获开始位置的索引
+            4、input：原字符串
+        */
+    </script>
+</body>
+
+</html>

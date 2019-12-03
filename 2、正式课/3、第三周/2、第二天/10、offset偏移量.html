@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #box {
+            width: 200px;
+            height: 200px;
+            background: greenyellow;
+            margin: 20px auto;
+            position: relative;
+            border: 10px solid orangered;
+        }
+        #inter {
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin:  20px auto;
+            border: 5px solid yellow;
+        }
+        #center {
+            width: 50px;
+            height: 50px;
+            background: hotpink;
+            margin:  0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="inter">
+            <div id="center"></div>
+        </div>
+    </div>
+    <script>
+        let box = document.getElementById('box')
+        let inter = document.getElementById('inter')
+        let center = document.getElementById('center')
+        /* 
+        offset的偏移量
+
+        offsetParent:父级参照物
+        offsetLeft：左偏移量 :从当前元素的左外边框到父级参照物的左内边框
+        offsetTop：上偏移量 ： 从当前元素的上外边框到父级参照物的上内边框
+
+         body的父级参照物是null
+         */
+
+        //   一般情况下所有的父级参照物都是body，如果给元素加上position属性(relative，absolute、fixed)，会让他的所有子孙元素的父级参照物都指向当前这个元素
+        // console.log(box.offsetParent) // body
+        // console.log(inter.offsetParent) // box
+        // console.log(center.offsetParent) // box
+        // console.log(document.body.offsetParent) // null body的父级参照物是null
+
+        function offset(cur){
+            let l = cur.offsetLeft;
+             // l用来存储每一次距离的累加和
+            let t = cur.offsetTop;
+            let parent = cur.offsetParent
+
+            // 如果获取的父级参照物不是body，就取继续循环，直到找到body位置
+            while(parent !==document.body){
+                // 把父级参照物的clientLeft和offsetLeft累加给l
+                l+=parent.clientLeft + parent.offsetLeft;
+
+                // 把父级参照物的clientTop和offsetTop累加给t
+                t+=parent.clientTop + parent.offsetTop;
+
+                // 获取元素的父级参照物
+                parent = parent.offsetParent
+            }
+            return {
+                l,
+                t
+            }
+        }
+        console.log(offset(box))
+    </script>
+</body>
+</html>

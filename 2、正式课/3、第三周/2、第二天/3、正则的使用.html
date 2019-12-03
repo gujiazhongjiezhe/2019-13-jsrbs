@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/* 
+正则分组：()
+1、改变优先级
+2、分组引用
+3、分组捕获
+*/ 
+    //    let reg = /^(18|29)$/ 
+    //    console.log(reg.test('18'))  // true
+    //    console.log(reg.test('29'))  // true
+    //    console.log(reg.test('1829'))  // false
+    //    console.log(reg.test('189')) // false
+    //    console.log(reg.test('129'))   // false
+
+    // let reg = /^[a-z]([a-z])\1$/
+    // console.log(reg.test('see'))
+
+    // let reg = /^([a-z])([a-z])\1\2$/
+    // console.log(reg.test('qwqw')) // true
+
+/* 
+[]
+    1、一般情况在中括号里出现的字符都是普通字符
+    2、中括号中不识别多位数
+*/
+    //    let reg = /^[@+]$/
+    //    console.log(reg.test('+')) // true
+    //    let reg1 = /^[\d]$/  // \d在[]中还是有特殊意义的
+    //    console.log(reg1.test('4'))
+
+    // let reg = /^[(12-38)]$/ // 1  2-3 8 (  )
+    // console.log(reg.test("12")) // false
+    // console.log(reg.test(")")) // true
+    // console.log(reg.test("3")) // true
+/* 
+转义：\
+
+*/
+        // let reg = /^2.3$/ // 中间的点可以匹配换行符外的所有字符
+        // console.log(reg.test('2.3')) // true
+        // console.log(reg.test('2@3'))  // true
+        // console.log(reg.test('2f3'))  // true
+
+        // let reg = /^2\.3$/ // 我只想匹配数组2.3
+        // console.log(reg.test('2.3')) // true
+        // console.log(reg.test('2@3'))  // fasle
+        // console.log(reg.test('2f3'))  // false
+    </script>
+</body>
+</html>
