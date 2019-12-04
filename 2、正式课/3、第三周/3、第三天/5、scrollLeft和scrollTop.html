@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+        #box {
+            width: 500px;
+            height: 300px;
+            margin: 800px auto;
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+            昨日，京东对《京东开放平台“商品价格保护”服务规则》进行了修订，此次修改对价保服务的适用范围、开通路径、不支持价保场景进行了调整及完善，并新增了价格保护计算公式，京东方面称，新规则将于7月26日正式生效，以下是京东价格保护方案改动情况昨日，京东对《京东开放平台“商品价格保护”服务规则》进行了修订，此次修改对价保服务的适用范围、开通路径、不支持价保场景进行了调整及完善，并新增了价格保护计算公式，京东方面称，新规则将于7月26日正式生效，以下是京东价格保护方案改动情况昨日，京东对《京东开放平台“商品价格保护”服务规则》进行了修订，此次修改对价保服务的适用范围、开通路径、不支持价保场景进行了调整及完善，并新增了价格保护计算公式，京东方面称，新规则将于7月26日正式生效，以下是京东价格保护方案改动情况
+    </div>
+    <script>
+    /* 
+    scrollLeft scrollTop
+    scrollLeft:当前元素横向滚动条卷去的长度
+    scrollTop 当前元素纵向滚动条卷去的高度
+
+    他俩是既读，又可写
+    */
+  
+//   document.documentElement.scrollTop = 500
+//   console.log(document.documentElement.scrollTop) 
+
+//   let windowTop = document.documentElement.scrollTop || document.body.scrollTop
+
+    // document.documentElement.scrollTop  = 500;
+    // document.body.scrollTop = 500;
+    /* 
+        封装一个方法，如果传一个参数就是获取浏览器的某个属性
+        如果传两个参数就是设置获取浏览器的某个属性
+        这个方法操作的元素是浏览器窗口，
+    */
+    // function win(attr, val){
+    //     if(val === undefined){
+    //         return document.documentElement[attr] || document.body[attr]
+    //     }
+    //     else {
+    //         document.documentElement[attr]  = val;
+    //         document.body[attr] = val;
+    //     }
+    // }
+    // win('scrollTop', 500);
+    // console.log(win('scrollTop'));
+    // console.log(win('clientHeight'))
+
+        window.onscroll = function(){
+            // 监听滚动条滚动事件，滚动条一旦滚动，这个函数就触发
+            console.log(1)
+        }
+    </script>
+</body>
+</html>

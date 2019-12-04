@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding:0;
+            margin: 0;
+        }
+        #box {
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        let box = document.getElementById('box')
+        /* 
+        他不会受内容溢出的影响
+        clientHeight: 当前元素的高度 +上下padding
+        clientWidth: 当前元素的宽度 +左右padding
+        clientLeft: 当前元素的左边框
+        clientTop:当前元素的上边框
+
+        offsetHeight ：clientHeight+上下 border
+        offsetWidth clientWidth+左右 border
+        offsetLeft：左偏移量(当前元素的左外边框到父级参照物的左内边框)
+        offsetTop：上偏移量(当前元素的上外边框到父级参照物的上内边框)
+        offsetParent：父级参照物(先找有没有position定位，有就是父级参照物，没有就是body)
+
+        scrollHeight：如果不溢出，那就是：clientHeight，如果溢出了，就是真实内容的高度+上下padding
+        scrollWidth ： 如果不溢出，那就是：clientWidth，如果溢出了，就是真实内容的宽度+上下padding
+
+        这十一个属性是可读属性，只允许读，不允许写
+
+        */
+
+
+       /* 
+        // 封装一个方法，获取一个元素距离body的左、上偏移量
+        body的offsetParent是null
+       */
+       function offset(cur){
+            let l = cur.offsetLeft;
+            let t =cur.offsetTop;
+            let parent = cur.offsetParent;
+
+            while(parent !== document.body){
+                l+=parent.clientLeft + parent.offsetLeft;
+                t+=parent.clientTop + parent.offsetTop;
+                parent = parent.offsetParent;
+            }
+            return {
+                left:l,
+                top:t
+            }
+       }
+       console.log(offset(box).left)
+    </script>
+</body>
+</html>

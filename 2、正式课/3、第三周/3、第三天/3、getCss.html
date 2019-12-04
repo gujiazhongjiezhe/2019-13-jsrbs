@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" style="width:800px"></div>
+    <script>
+        let box = document.getElementById('box');
+        // 获取元素的css样式
+
+        // 1、元素.style.width 这是获取的行内样式
+        // console.log(box.style.width)  '' // 获取不到
+        // 2、getComputedStyle 
+        // 1、他是window上的一个属性
+        // 2、他既能获取样式表里的样式，也能获取行内的样式
+        // 3、getComputedStyle(元素).属性名
+        //     console.log('getComputedStyle' in window) // true
+        //    console.log(getComputedStyle(box).width)  // '100px'
+        //    console.log(getComputedStyle(box)['width']) // '100px'
+        //    console.log(getComputedStyle(box)['backgroundColor']) //'rbg(255,0,0)'
+        // 3、 currentStyle
+        // 1、这个属性只在IE下存在
+        // 2、元素.currentStyle.属性名
+        // console.log(box.currentStyle.width);
+        console.log('getComputedStyle' in window);
+
+        /* 
+        封装一个获取scc样式的方法，
+        */
+        function getCss(curEle, attr) { // curEle元素  attr属性名
+            let val = null
+            if ('getComputedStyle' in window) {
+                val = getComputedStyle(curEle)[attr]
+            } else {
+                val = curEle.currentStyle[attr]
+            }
+            /* 
+            我想把带单位的属性值的单位去掉，并且转换为数字,后面咱们用的到
+            */
+            let reg = /^(width|height|top|bottom|left|right|padding|margin|fontSize|opacity)$/
+            if (reg.test(attr)) {
+                val = parseFloat(val)
+            }
+            return val
+        }
+
+        console.log(getCss(box, 'width'))
+    </script>
+</body>
+
+</html>

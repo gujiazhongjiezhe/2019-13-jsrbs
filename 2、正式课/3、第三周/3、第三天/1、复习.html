@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        复习：正则的捕获：
+        1、exec
+            ：正则的懒惰型，
+        2、match
+            ：在加上g的情况，不能够实现分组捕获，他返回的是数组，如果不加g，那返回的内容和exec一样，如果加上g，那数组里的内容就是每一次捕获的内容(不包括分组捕获的内容)
+        3、replace
+
+         */
+
+        //  let str = 'zhufeng33zhufeng33';
+        //     let reg = /[a-z]+/g
+        //     // str = str.replace(reg, 'zhufengpeixun');
+        //     // console.log(str)
+        //     str = str.replace(reg, function(content){
+        //         console.log(content)
+        //         console.log(arguments)
+        //         /* 
+        //         1、正则匹配几次，回调函数就执行几次
+        //         2、当执行的时候，他会把捕获的内容当做回调函数的实参传给回调函数
+        //         3、回调函数的返回值(就是return后面的东西)就替换当前捕获到的内容
+        //         */
+        //        return 'zhufengpeixun'
+        //     })
+        //     console.log(str)
+
+        let str = 'good day';
+        let reg = /\b([a-z])[a-z]+\b/g
+        str = str.replace(reg, (word, firstWord)=>{
+            console.log(word, firstWord)
+            // 1、先把首字母转大写
+            // 2、截取单词第一项往后的单词
+            // 3、把转大写的首字母和截取到的字母拼接到一起
+            // 4、用拼接后的单词替换捕获到的内容
+            firstWord = firstWord.toUpperCase();
+            word = word.slice(1);
+            return firstWord + word
+        })
+        console.log(str)
+    </script>
+</body>
+</html>

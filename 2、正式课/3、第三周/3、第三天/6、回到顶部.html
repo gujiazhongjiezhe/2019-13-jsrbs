@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #goBack {
+            width: 200px;
+            height:200px;
+            border-radius: 50%;
+            line-height: 200px;
+            text-align: center;
+            background: orangered;
+            color: white;
+            font-size: 30px;
+            font-weight: 400;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <img src="./1.png" alt="">
+        <img src="./1.png" alt="">
+        <img src="./1.png" alt="">
+        <img src="./1.png" alt="">
+        <img src="./1.png" alt="">
+        <div id="goBack">
+            返回顶部
+        </div>
+    </div>
+    <script src="utils.js"></script>
+    <script>
+        let back = document.getElementById('goBack');
+        back.onclick = function(){
+            /* 
+            我想1秒钟让其回到顶部
+            */
+            
+           let winT =  utils.win('scrollTop');
+           let dis = winT/50 ; // 把滚动条卷去的高度平均分成50份 ,每20毫秒就累减依次，1秒钟正好累减到0
+           var timer = setInterval(()=>{
+            winT-=dis  // 
+            if(winT<=0){
+                clearInterval(timer)
+            }
+            utils.win('scrollTop', winT);
+           },20)
+        }
+
+        window.onscroll = function(){
+            // 这个方法你一滑动滚动条，他就会触发
+            /* 
+            当浏览器滚动条滚动的距离(卷去的高度)大于等于当前屏幕(可视窗口)一屏的高度时，在让回到顶部元素显示
+             */
+            let winH = utils.win('clientHeight');
+            let winT = utils.win('scrollTop');
+            console.log(winH, winT) // 方便查看两个数比较的结果
+            if(winT>winH){utils.css(back, 'display', 'block')}
+            else { utils.css(back, 'display', 'none')}
+        }
+    </script>
+</body>
+</html>
