@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        class类
+        */
+       class A {
+           constructor(){
+               this.x =100;
+               this.w = 200;
+           }
+           getX(){
+               console.log(this.x)
+           }
+       }
+
+    //    class B {
+    //        constructor(){
+    //            this.y =100
+    //         //    A.call(this)
+    //        }
+    //        getY(){
+    //            console.log(this.y)
+    //        }
+    //    }
+    // //    B.prototype = Object.create(A.prototype)
+    //    // ES6创建的class类的原型不能重定向原型
+    //    let f = new B;
+    //    console.log(f)
+
+    // 子类  继承  父类
+    class B extends A{
+        // 一旦写上constructor，那里面的第一句话就得是super()
+        // constructor可以省略，他会默认帮你写了个constructor(){super()}
+        constructor(){
+            super(800)  // A.call(this, 800)
+            this.y = 200
+        }
+    }
+    let f = new B;
+    console.log(f)
+    // f-->B.prototype-->A.prototype-->Object.peorotype-->null   
+    f.getX()
+    </script>
+</body>
+</html>
