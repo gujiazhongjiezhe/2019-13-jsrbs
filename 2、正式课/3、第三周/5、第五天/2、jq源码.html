@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        (function (global, factory) {
+            // global就是 window
+            // factory是 function (window, noGlobal) {}
+
+            if (typeof module === "object" && typeof module.exports === "object") {
+                // ...
+                // 支持CommonJs模块规范的执行这里(例如node.js)
+            } else {
+                // 代码能走到这里说明是浏览器或者webView环境
+                // 当外层自执行代码执行的时候，factory执行，function (window, noGlobal) {}
+                //                                                 window
+                // 也就是说function的里第一个形参被赋值的实参就是window
+                factory(global);
+            }
+
+
+            // typeof windiw => 'object'
+        }(typeof window !== "undefined" ? window : this, function (window, noGlobal) {
+            //    参数信息
+            //    window --> window
+            //    noGlobal --> undefined
+            // ....
+            var version = "1.11.3",
+                jQuery = function (selector, context) {
+                    return new jQuery.fn.init(selector, context);
+                };
+            // jQqury还一个自定义类，他们把jQuery的原型重定向了，
+            // 而且还给jQ加了一个属性，属性值也是自己的原型  jQuery.fn === jQuery.prototype
+            jQuery.fn = jQuery.prototype = {
+                // 这里面是jQ的公有属性和方法
+                jquery: version,
+
+                // 我们自己重定向后的原型是没有construstor，所以他给手动增加了一个constructor属性指向自己的类
+                // 为了保证原型的完整性
+                constructor: jQuery,
+                // 转换为数组的方法
+                // this：一般是当前类jQuery的实例
+                toArray: function () {
+                    // this：一般是当前类jQuery的实例
+                    return slice.call(this);
+                },
+                // 把jQ对象转换为原生js对象
+                get: function (num) {
+                    return num != null ?
+
+                        // Return just the one element from the set
+                        (num < 0 ? this[num + this.length] : this[num]) :
+
+                        // Return all the elements in a clean array
+                        slice.call(this);
+                },
+                each: function (callback, args) {
+                    // this就是当前实例，
+                    // each是jQ类的一个私有属性(把jQ当做对象来用)
+
+                    // 一会去jQ里查each方法
+                    return jQuery.each(this, callback, args);
+                },
+                eq: function (i) {
+                    var len = this.length,
+                        j = +i + (i < 0 ? len : 0);
+                    return this.pushStack(j >= 0 && j < len ? [this[j]] : []);
+                },
+
+            }
+
+            // 把jQuery赋值给window的$和jQuery，这样你就在全局下都可以使用了
+            if (typeof noGlobal === "undefined") {
+		         window.jQuery = window.$ = jQuery;
+	        }
+        }));
+        
+
+        $()
+
+
+
+        //jQ提供的方法放到了两个位置
+        // 1、原型上jQuery.prototype={toArray:fn}
+            // $().toArray()
+            // 只有jQ的实例才可以调用
+        // 2、对象上jQuery.ajax = ...
+            // $.ajax()
+            // 直接调取使用
+
+
+
+
+
+
+        // 检测当前对象是数组还是类数组
+        // function isArraylike(obj) {
+
+
+        // if (type === "function" || jQuery.isWindow(obj)) {
+        //     return false;
+        // }
+
+        // if (obj.nodeType === 1 && length) {
+        //     return true;
+        // }
+
+        // return type === "array" || length === 0 ||
+        //     typeof length === "number" && length > 0 && (length - 1) in obj;
+        // }
+    </script>
+</body>
+
+</html>
