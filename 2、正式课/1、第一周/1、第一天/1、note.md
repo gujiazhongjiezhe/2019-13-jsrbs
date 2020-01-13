@@ -1,5 +1,6 @@
 # 第一天笔记
  git pull origin master --allow-unrelated-histories（如果pull的时候失败，就输入这个）
+
 ## git版本控制系统
 - 1、git(版本控制系统); 到底什么是git，到底什么是版本控制系统，他是干嘛的呢？
     + 记录历史版本信息（记录每一次修改的记录）
@@ -13,7 +14,8 @@
 - 2、git的安装
     >git的官网   https://git-scm.com/downloads
 
-    > 带领学生们安装git，安装成功后在桌面右键会出来那两个git选项（或者在终端执行git --version）
+    > 带领学生们安装git，
+    出来那两个git选项（或者在终端执行git --version）
     ------------以上只是针对于window电脑的，ios的请看下边-----------
 
     > mac电脑安装：

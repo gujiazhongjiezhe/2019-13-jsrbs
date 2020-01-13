@@ -69,6 +69,9 @@
     <script>
        let $navList = $('.box li');
        let $tabList = $('.box div');
+       $navList.click((e)=>{
+        console.log(e)
+       })
 
     // //    $navList.each(function(index, item){
     // //         console.log(index, item)
@@ -80,7 +83,7 @@
 
 
     // // 他会自动给每一个li加上点击事件，内部就给你循环了
-    $navList.click(function(){
+    // $navList.click(function(){
     //     // index()代表了当前点击元素的位置的索引
     //     //  eq()通过索引找到对应的元素
 
@@ -88,8 +91,8 @@
     //     $(this).addClass('active').siblings().removeClass('active');
     //     $tabList.eq(index).addClass('active').siblings().removeClass('active');
 
-    $(this).addClass('active').siblings().removeClass('active').parent().nextAll().eq($(this).index()).addClass('active').siblings().removeClass('active')
-    })
+    // $(this).addClass('active').siblings().removeClass('active').parent().nextAll().eq($(this).index()).addClass('active').siblings().removeClass('active')
+    // })
    
     </script>
 

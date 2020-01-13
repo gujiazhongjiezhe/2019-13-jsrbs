@@ -10,11 +10,10 @@
 
 <body>
     <script>
-
-        // 1、变量提升发生在等号左边
+    // 1、变量提升发生在等号左边
         // var a = function(){}
 
-        //2、不管if条件是否成立，都要进行变量提升
+    // 2、不管if条件是否成立，都要进行变量提升
 
         // console.log(num) // undefined
         // if(false){
@@ -63,19 +62,32 @@
         // }
         // fn();
 
-        // 3、函数里虽然return下面的代码不执行，但是要进行变量提升
-            // function fn() {
-            //     console.log(ss); // undefined
-            //     return;
-            //     var ss = 34;
-            // }
-            // fn()
+    // 3、函数里虽然return下面的代码不执行，但是要进行变量提升
+        // function fn() {
+        //     console.log(ss); // undefined
+        //     return;
+        //     var ss = 34;
+        // }
+        // fn()
 
-        // 4、匿名函数不进行变量提升
+    // 4、匿名函数不进行变量提升
 
         // (function(){
 
         // })()
+
+        var obj = {
+            fn: (function () {
+                console.log(100);
+                return function () {
+                    console.log(666)
+                }
+            })()
+        };
+        console.log(200)
+        obj.fn();
+        obj.fn(); // 执行函数中返回的小函数执行
+        console.log(obj.fn);
     </script>
 </body>
 

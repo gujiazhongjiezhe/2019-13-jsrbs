@@ -76,7 +76,7 @@ function sortList() {
 
     cardList.sort((a, b) => {
         // 这的this就是当前点击的元素(a标签)
-        console.log(this.flag)
+        console.log(this.flag);
         //当我们拿到数据进行页面渲染时，可以把我们想要用的数据绑定到标签的结构上
         // console.log(a,b)
 

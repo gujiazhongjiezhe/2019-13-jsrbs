@@ -20,23 +20,20 @@
         // 还可以保存变量
 
         /* 
-        n = 1
-        fn:fn
-        x: f
-        */
+        n 1
+        fn f
+        x
+         */
         var n = 1;
         function fn() {
             /* 
-            n = 2 1 0
-            f:f
-            */
-            var n = 2;
+            n 2
+            f f
+             */
+            var n = 2; // 1 0 
             function f() {
-                /* 
-                
-                */
                 n--;
-                console.log(n); // 1 0
+                console.log(n);
             }
             f();
             return f;
